@@ -1,0 +1,103 @@
+.scrollIcon {
+  opacity: 1;
+  text-align: center;
+  position: sticky;
+  top: 80%;
+}
+
+.icon {
+  text-align: center;
+  position: sticky;
+  top: 80%;
+  font-size: 50px;
+}
+
+.yesThatsMe {
+  opacity: 0;
+  margin-top: 40%;
+  position: sticky;
+  top: 50px;
+  max-height: 50%;
+  max-width: 100%;
+  z-index: -1;
+}
+
+.titelText {
+  opacity: 1;
+  position: sticky;
+  top: 40%;
+  font-family: 'Tomorrow', sans-serif;
+}
+
+.indexHello {
+  font-size: 40px;
+}
+
+.indexMyName {
+  font-size: 50px;
+}
+
+.content {
+  margin-bottom: 420px;
+  opacity: 0;
+}
+
+.contentGroupRight {
+  margin-left: unset;
+  margin-right: 10%;
+  margin-bottom: 100px;
+}
+
+.contentRight {
+  color: black;
+  font-size: 30px;
+}
+
+.contentGroupLeft {
+  margin-left: 10%;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.contentLeft {
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 16px;
+  }
+  .indexHello {
+    font-size: 20px;
+  }
+
+  .indexMyName {
+    font-size: 25px;
+  }
+  .yesThatsMe {
+    margin-top: 40%;
+    position: sticky;
+    top: 50px;
+    max-height: 50%;
+    opacity: 0;
+  }
+  .contentGroup {
+    padding-top: 300px;
+  }
+  .scrollIcon {
+    position: sticky;
+    text-align: center;
+    top: 80%;
+    font-size: 30px;
+  }
+  .contentRight {
+    color: black;
+    font-size: 15px;
+  }
+  .contentLeft {
+    color: whitesmoke;
+    font-size: 15px;
+  }
+}
