@@ -1,33 +1,36 @@
 <div class="">
   <main role="main" class="pb-3">
-    <div class="text-center titelText">
-      <p class="indexHello">Hello, I am</p>
-      <p class="indexMyName is-visible">Nils Niemeyer</p>
+    <div class="nin-title-text" id="nin-title-text">
+      <div class="nin-hello" id="nin-hello">Hello, I am</div>
+      <div class="nin-my-name is-visible" id="nin-my-name">Nils Niemeyer</div>
     </div>
-    <div class="scrollIcon">
-      <mat-icon class="icon" aria-hidden="false">expand_less</mat-icon>
+    <div class="nin-scroll-icon" id="nin-scroll-icon">
+      <div aria-hidden="false">
+        <span [@fadeInOut]="fading ? 'in' : 'out'" class="material-icons icon">expand_less</span>
+      </div>
     </div>
-    <img class="yesThatsMe" src="../../assets/image/yesThatsMe.jpg" />
+    <img class="nin-background-image nin-dark-background" id="nin-background-image"
+         src="../../assets/images/me-background.jpg"
+         alt="Me as a meme"/>
     <div class="contentGroup">
-      <div class="content">
+      <div class="scroll-content">
         <div class="contentGroupLeft text-left firstContent">
           <p class="contentLeft">console.log("Hello World!")</p>
           <p class="contentLeft">console.log("I'm developer and this is my world")</p>
         </div>
       </div>
-
-      <div class="content">
-        <div class="contentGroupRight text-right">
+      <div class="scroll-content">
+        <div class="contentGroupRight">
           <h2 class="contentRight">Full stack developer</h2>
         </div>
       </div>
-      <div class="content">
+      <div class="scroll-content">
         <div class="contentGroupLeft text-left">
           <h2 class="contentLeft">Web Dev</h2>
         </div>
       </div>
-      <div class="content">
-        <div class="contentGroupRight text-right">
+      <div class="scroll-content">
+        <div class="contentGroupRight">
           <h2 class="contentRight">Games Programing</h2>
         </div>
       </div>

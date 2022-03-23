@@ -15,4 +15,5 @@ export class NavBarComponent implements OnInit {
   openLinkNewTab(link: string) {
    window.open(link)
   }
+
 }

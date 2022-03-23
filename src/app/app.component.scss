@@ -1,0 +1,14 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nin-cursor-container {
+  position: relative;
+  z-index: 1000;
+}
+
+.nin-button {
+  cursor: none;
+}

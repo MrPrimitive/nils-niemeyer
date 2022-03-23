@@ -1,0 +1,26 @@
+@import "vars";
+@import "cursor-desktop";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+footer {
+  margin-bottom: 20px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  font-family: $agave-nerd-font;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

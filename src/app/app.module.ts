@@ -12,13 +12,18 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import {MatMenuModule} from "@angular/material/menu";
+import {AppOpenCloseComponent} from './app-open-close/app-open-close.component';
+import {MakotoCursorComponent} from "./_helper/cursor/makoto-cursor.component";
+import {MatTabsModule} from "@angular/material/tabs";
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     NavBarComponent,
-    MyWorkComponent
+    MyWorkComponent,
+    AppOpenCloseComponent,
+    MakotoCursorComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,8 @@ import {MatMenuModule} from "@angular/material/menu";
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

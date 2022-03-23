@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LandingPageComponent } from './landing-page.component';
+import { AppOpenCloseComponent } from './app-open-close.component';
 
-describe('LandingPageComponent', () => {
-  let component: LandingPageComponent;
-  let fixture: ComponentFixture<LandingPageComponent>;
+describe('AppOpenCloseComponent', () => {
+  let component: AppOpenCloseComponent;
+  let fixture: ComponentFixture<AppOpenCloseComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LandingPageComponent ]
+      declarations: [ AppOpenCloseComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LandingPageComponent);
+    fixture = TestBed.createComponent(AppOpenCloseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
