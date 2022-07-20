@@ -42,10 +42,10 @@
 
 @media screen and (min-width: $window-width-size) {
   html {
-    cursor: none !important;
+    //cursor: none !important;
   }
   .mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button {
-    cursor: none !important;
+    //cursor: none !important;
   }
   .mat-menu {
     z-index: 100;

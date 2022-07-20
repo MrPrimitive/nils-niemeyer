@@ -16,6 +16,7 @@ export class MakotoCursorComponent {
     const cursor = document.getElementById('cursor');
     const darkElements = document.querySelectorAll('.nin-dark-background');
     const buttonElements = document.querySelectorAll('.nin-button');
+    const linkElements = document.querySelectorAll('.nin-link');
 
     if (cursor) {
       cursor.style.opacity = '1';
@@ -24,6 +25,9 @@ export class MakotoCursorComponent {
 
       buttonElements.forEach(e => e.addEventListener('mouseenter', () => handleMouseButtonEnter(cursor)))
       buttonElements.forEach(e => e.addEventListener('mouseleave', () => handleMouseButtonLeave(cursor)))
+
+      linkElements.forEach(e => e.addEventListener('mouseenter', () => handleMouseButtonEnter(cursor)))
+      linkElements.forEach(e => e.addEventListener('mouseleave', () => handleMouseButtonLeave(cursor)))
 
       window.addEventListener('mousemove', (e) => handleMouseMove(e, cursor));
       window.addEventListener('scroll', (e) => {

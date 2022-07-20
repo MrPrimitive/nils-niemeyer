@@ -5,7 +5,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {LandingPageComponent} from './landing-page/landing-page.component';
 import {MyWorkComponent} from './my-work/my-work.component';
-import {NavBarComponent} from './nav-bar/nav-bar.component';
+import {NavigationComponent} from './navigation/navigation.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
@@ -20,7 +20,7 @@ import {MatTabsModule} from "@angular/material/tabs";
   declarations: [
     AppComponent,
     LandingPageComponent,
-    NavBarComponent,
+    NavigationComponent,
     MyWorkComponent,
     AppOpenCloseComponent,
     MakotoCursorComponent
