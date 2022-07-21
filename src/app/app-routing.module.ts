@@ -1,12 +1,17 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {LandingPageComponent} from "./landing-page/landing-page.component";
-import {MyWorkComponent} from "./my-work/my-work.component";
+import {LandingPageComponent} from "./pages/landing-page/landing-page.component";
+import {AboutPageComponent} from "./pages/about-page/about-page.component";
+import {MyWorkPageComponent} from "./pages/my-work-page/my-work-page.component";
+import {MakotoStudioPageComponent} from "./pages/makoto-studio-page/makoto-studio-page.component";
 
 const routes: Routes = [
   // {path: '**', component: LandingPageComponent},
   {path: '', component: LandingPageComponent},
-  {path: 'work', component: MyWorkComponent}
+  {path: 'about', component: AboutPageComponent},
+  {path: 'work', component: MyWorkPageComponent},
+  {path: 'makoto-studio', component: MakotoStudioPageComponent},
+
 ];
 
 @NgModule({

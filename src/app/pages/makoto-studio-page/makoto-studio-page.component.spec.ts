@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppOpenCloseComponent } from './app-open-close.component';
+import { MakotoStudioPageComponent } from './makoto-studio-page.component';
 
-describe('AppOpenCloseComponent', () => {
-  let component: AppOpenCloseComponent;
-  let fixture: ComponentFixture<AppOpenCloseComponent>;
+describe('MakotoStudioPageComponent', () => {
+  let component: MakotoStudioPageComponent;
+  let fixture: ComponentFixture<MakotoStudioPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AppOpenCloseComponent ]
+      declarations: [ MakotoStudioPageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AppOpenCloseComponent);
+    fixture = TestBed.createComponent(MakotoStudioPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

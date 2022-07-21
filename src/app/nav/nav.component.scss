@@ -23,6 +23,10 @@
   padding-top: 25%;
   padding-bottom: 25%;
   text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .nin-navigation-content-button-icon {
