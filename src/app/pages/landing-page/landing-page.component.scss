@@ -7,20 +7,30 @@
   top: 80%;
 }
 
-.icon {
+.bouncing-arrow-icon {
   text-align: center;
   position: sticky;
   top: 80%;
   font-size: 100px;
 }
 
-.nin-background-image {
+.nin-background-first-image {
   opacity: 0;
   //padding-top: 100%;
   margin-top: 40%;
   position: sticky;
   top: 0;
   max-height: 50%;
+  max-width: 100%;
+  margin-bottom: -400px;
+  z-index: -2;
+}
+
+
+.nin-background-second-image {
+  opacity: 0;
+  position: sticky;
+  top: 0;
   max-width: 100%;
   margin-bottom: -400px;
   z-index: -1;
@@ -41,8 +51,13 @@
   padding-top: 5%;
 }
 
-.contentGroup {
+.content-group {
   padding-top: 300px;
+  //background-color: aqua;
+}
+
+.content-group-last {
+  padding-bottom: 300px;
 }
 
 .scroll-content {
@@ -51,26 +66,26 @@
   //transform: scale(0.5);
 }
 
-.contentGroupRight {
+.content-group-right {
   text-align: right;
   margin-left: unset;
   margin-right: 10%;
   margin-bottom: 100px;
 }
 
-.contentRight {
+.content-right {
   color: black;
   font-size: 30px;
 }
 
-.contentGroupLeft {
+.content-group-left {
   text-align: left;
   margin-left: 10%;
   margin-right: auto;
   margin-bottom: 100px;
 }
 
-.contentLeft {
+.content-left {
   color: whitesmoke;
   font-size: 30px;
 }

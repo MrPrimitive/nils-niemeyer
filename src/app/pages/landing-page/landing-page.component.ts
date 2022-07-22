@@ -7,7 +7,7 @@ import {concatMap} from "rxjs";
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss'],
   animations: [
-    trigger('fadeInOut', [
+    trigger('bouncingArrow', [
       state('in', style({
         opacity: 0.5,
         transform: 'translateY(20px) scale(1)',
@@ -23,16 +23,14 @@ import {concatMap} from "rxjs";
       transition('out => in', [
         animate('1.5s')
       ]),
-    ]),
+    ])
   ]
 })
 export class LandingPageComponent implements OnInit {
-  public fading: boolean
-  public fadeContent = true;
+  public bouncingArrowState: boolean
 
   constructor() {
-    this.fading = false;
-    // this.fadeContent = false;
+    this.bouncingArrowState = false;
   }
 
   ngOnInit(): void {
@@ -42,16 +40,10 @@ export class LandingPageComponent implements OnInit {
     setInterval(() => {
       this.fadeInEvent();
     }, 1200);
-
   }
 
   fadeInEvent() {
-    if (this.fading) {
-      this.fading = !this.fading;
-    } else {
-      this.fading = !this.fading;
-    }
-    return this.fading;
+    this.bouncingArrowState = !this.bouncingArrowState;
   }
 
   scrollEvent(event: any) {
@@ -66,12 +58,14 @@ export class LandingPageComponent implements OnInit {
       titleElement.style.top = (40 + window.scrollY / 250) + '%';
     }
 
-    const imageElement = document.getElementById("nin-background-image");
-    if (imageElement) {
-      const opa = window.scrollY / 850;
-      // console.log(opa);
+    const firstImageElement = document.getElementById("nin-background-first-image");
+    if (firstImageElement) {
+      firstImageElement.style.opacity = String(window.scrollY / 850);
+    }
 
-      imageElement.style.opacity = String(window.scrollY / 850);
+    const secondImageElement = document.getElementById("nin-background-second-image");
+    if (secondImageElement) {
+      secondImageElement.style.opacity = String(window.scrollY / 850);
     }
 
     const myNameElement = document.getElementById('nin-my-name')

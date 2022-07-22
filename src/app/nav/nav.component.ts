@@ -39,18 +39,10 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
     ])
   ]
 })
-export class NavComponent implements OnInit {
-
+export class NavComponent {
   isShowNavContent = false;
 
   constructor(public router: Router) {
-  }
-
-  ngOnInit(): void {
-  }
-
-  openLinkNewTab(link: string) {
-    window.open(link)
   }
 
   showNavContent($event: Event) {
