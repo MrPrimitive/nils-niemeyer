@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {trigger, state, style, transition, animate} from "@angular/animations";
 import {concatMap} from "rxjs";
+import {ScreenSize} from "../../_helper/ScreenWindow/ScreenSizeCalculator";
 
 @Component({
   selector: 'app-landing-page',
@@ -28,15 +29,30 @@ import {concatMap} from "rxjs";
 })
 export class LandingPageComponent implements OnInit {
   public bouncingArrowState: boolean
+  screenHeight: number
+  screenHeightQatar: number
+  screenHeightThreeQatar: number
 
   constructor() {
     this.bouncingArrowState = false;
+    this.screenHeight = window.screen.height;
+    console.log(this.screenHeight)
+    this.screenHeightQatar = this.screenHeight / 4
+    console.log(this.screenHeightQatar)
+    this.screenHeightThreeQatar = this.screenHeight - this.screenHeightQatar
+    console.log(this.screenHeightThreeQatar)
   }
 
   ngOnInit(): void {
+    this.screenHeight = window.screen.height;
+    console.log(this.screenHeight)
+    this.screenHeightQatar = this.screenHeight / 4
+    console.log(this.screenHeightQatar)
+    this.screenHeightThreeQatar = this.screenHeight - this.screenHeightQatar
+    console.log(this.screenHeightThreeQatar)
+
     this.fadeInEvent()
     window.addEventListener('scroll', this.scrollEvent);
-
     setInterval(() => {
       this.fadeInEvent();
     }, 1200);
@@ -49,28 +65,28 @@ export class LandingPageComponent implements OnInit {
   scrollEvent(event: any) {
     const iconElement = document.getElementById("nin-scroll-icon");
     if (iconElement) {
-      iconElement.style.opacity = String(1 - window.scrollY / 250);
+      iconElement.style.opacity = String(1 - window.scrollY / this.screenHeightQatar);
     }
 
     const titleElement = document.getElementById("nin-title-text");
     if (titleElement) {
-      titleElement.style.opacity = String(1 - window.scrollY / 1050);
-      titleElement.style.top = (40 + window.scrollY / 250) + '%';
+      titleElement.style.opacity = String(1 - window.scrollY / this.screenHeight);
+      titleElement.style.top = (40 + window.scrollY / this.screenHeightQatar) + '%';
     }
 
     const firstImageElement = document.getElementById("nin-background-first-image");
     if (firstImageElement) {
-      firstImageElement.style.opacity = String(window.scrollY / 850);
+      firstImageElement.style.opacity = String(window.scrollY / this.screenHeightThreeQatar);
     }
 
     const secondImageElement = document.getElementById("nin-background-second-image");
     if (secondImageElement) {
-      secondImageElement.style.opacity = String(window.scrollY / 850);
+      secondImageElement.style.opacity = String(window.scrollY / this.screenHeightThreeQatar);
     }
 
     const myNameElement = document.getElementById('nin-my-name')
     if (myNameElement) {
-      myNameElement.style.paddingTop = (5 - window.scrollY / 250) + '%';
+      myNameElement.style.paddingTop = (5 - window.scrollY / this.screenHeightQatar) + '%';
     }
 
     // const elementHTMLCollectionOf = document.getElementsByClassName('scroll-content');
