@@ -1,7 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {trigger, state, style, transition, animate} from "@angular/animations";
-import {concatMap} from "rxjs";
-import {ScreenSize} from "../../_helper/ScreenWindow/ScreenSizeCalculator";
 
 @Component({
   selector: 'app-landing-page',
@@ -19,38 +17,26 @@ import {ScreenSize} from "../../_helper/ScreenWindow/ScreenSizeCalculator";
         transform: 'translateY(0) scale(1.2)',
       })),
       transition('in => out', [
-        animate('1.5s')
+        animate('{{time}}')
       ]),
       transition('out => in', [
-        animate('1.5s')
+        animate('{{time}}')
       ]),
     ])
   ]
 })
 export class LandingPageComponent implements OnInit {
   public bouncingArrowState: boolean
-  screenHeight: number
-  screenHeightQatar: number
-  screenHeightThreeQatar: number
+  public animationTime: string = '1.5s'
+  public animationState: string = 'out'
+
+  public firstContentTrigger: string = 'out';
 
   constructor() {
     this.bouncingArrowState = false;
-    this.screenHeight = window.screen.height;
-    console.log(this.screenHeight)
-    this.screenHeightQatar = this.screenHeight / 4
-    console.log(this.screenHeightQatar)
-    this.screenHeightThreeQatar = this.screenHeight - this.screenHeightQatar
-    console.log(this.screenHeightThreeQatar)
   }
 
   ngOnInit(): void {
-    this.screenHeight = window.screen.height;
-    console.log(this.screenHeight)
-    this.screenHeightQatar = this.screenHeight / 4
-    console.log(this.screenHeightQatar)
-    this.screenHeightThreeQatar = this.screenHeight - this.screenHeightQatar
-    console.log(this.screenHeightThreeQatar)
-
     this.fadeInEvent()
     window.addEventListener('scroll', this.scrollEvent);
     setInterval(() => {
@@ -60,37 +46,60 @@ export class LandingPageComponent implements OnInit {
 
   fadeInEvent() {
     this.bouncingArrowState = !this.bouncingArrowState;
+    this.animationState = this.bouncingArrowState ? 'out' : 'in'
   }
 
   scrollEvent(event: any) {
+    const screenHeight = window.screen.height
+    const screenHeightQatar = screenHeight / 4
+    const screenHeightThreeQatar = screenHeight - screenHeightQatar
+
     const iconElement = document.getElementById("nin-scroll-icon");
     if (iconElement) {
-      iconElement.style.opacity = String(1 - window.scrollY / this.screenHeightQatar);
+      iconElement.style.opacity = String(1 - window.scrollY / screenHeightQatar);
     }
 
     const titleElement = document.getElementById("nin-title-text");
     if (titleElement) {
-      titleElement.style.opacity = String(1 - window.scrollY / this.screenHeight);
-      titleElement.style.top = (40 + window.scrollY / this.screenHeightQatar) + '%';
+      titleElement.style.opacity = String(1 - window.scrollY / screenHeight);
+      titleElement.style.top = (40 + window.scrollY / screenHeightQatar) + '%';
     }
 
     const firstImageElement = document.getElementById("nin-background-first-image");
     if (firstImageElement) {
-      firstImageElement.style.opacity = String(window.scrollY / this.screenHeightThreeQatar);
+      firstImageElement.style.opacity = String(window.scrollY / screenHeightThreeQatar);
     }
 
     const secondImageElement = document.getElementById("nin-background-second-image");
     if (secondImageElement) {
-      secondImageElement.style.opacity = String(window.scrollY / this.screenHeightThreeQatar);
+      secondImageElement.style.opacity = String(window.scrollY / screenHeightThreeQatar);
     }
 
     const myNameElement = document.getElementById('nin-my-name')
     if (myNameElement) {
-      myNameElement.style.paddingTop = (5 - window.scrollY / this.screenHeightQatar) + '%';
+      myNameElement.style.paddingTop = (5 - window.scrollY / screenHeightQatar) + '%';
     }
 
-    // const elementHTMLCollectionOf = document.getElementsByClassName('scroll-content');
-    //
+    // const elementHTMLCollectionOf = document.getElementsByClassName('nin-scroll-content');
+
+    const firstElement = document.getElementById('nin-first-content')
+    if(firstElement) {
+      if(window.scrollY > 1350){
+        this.firstContentTrigger = 'out';
+      } else {
+        this.firstContentTrigger = 'in';
+      }
+    }
+
+    console.log(this.firstContentTrigger)
+
+
+
+
+
+
+
+
     // for (let i = 0; i < elementHTMLCollectionOf.length; i++) {
     //   const element = elementHTMLCollectionOf.item(i)
     //   if (element) {
@@ -151,3 +160,35 @@ export class LandingPageComponent implements OnInit {
 
   }
 }
+
+
+
+// var secondElme = document.getElementById('nin-second-content')
+// if (firstElme != null) {
+//   var first = GetElementOffSet(firstElme)
+//   console.log("First Element: [" + first + "] Scroll Value: [" + window.scrollY + "]")
+// }
+// if (secondElme != null) {
+//   var second: number = GetElementOffSet(secondElme)
+//   console.log("Second Element: " + second + "] Scroll Value: [" + window.scrollY + "]")
+// }
+//
+//
+// function GetElementOffSet(elem: HTMLElement) {
+//
+//   var distance = 0;
+//
+//   if (elem != null) {
+//
+//     do {
+//       // Increase our distance counter
+//       distance += elem.offsetTop;
+//
+//       // Set the element to it's parent
+//       elem = <HTMLElement>elem.offsetParent;
+//
+//     } while (elem);
+//     distance = distance < 0 ? 0 : distance;
+//   }
+//   return distance;
+// }

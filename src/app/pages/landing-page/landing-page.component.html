@@ -15,47 +15,68 @@
          id="nin-scroll-icon">
       <div aria-hidden="false">
         <span class="material-icons bouncing-arrow-icon"
-              [@bouncingArrow]="bouncingArrowState ? 'in' : 'out'">
+              [@bouncingArrow]="{value:animationState, params:{time: animationTime}}">
           expand_less
         </span>
+        <div class="nin-bouncing-arrow-text">
+          SCROLL DOWN
+        </div>
       </div>
     </div>
     <img class="nin-background-first-image nin-dark-background"
          id="nin-background-first-image"
          src="../../../assets/images/me-background.jpg"
          alt="Me as a meme"/>
-    <div class="content-group">
-      <div class="scroll-content">
-        <div class="content-group-left text-left firstContent">
-          <p class="content-left">PLACEHOLDER LEFT</p>
-<!--          <p class="content-left">console.log("I'm developer and this is my world")</p>-->
-        </div>
-      </div>
-      <div class="scroll-content">
-        <div class="content-group-right">
-          <h2 class="content-right">PLACEHOLDER RIGHT</h2>
+    <div class="nin-content-group-title">
+      <p>PLACEHOLDER</p>
+    </div>
+    <div class="nin-content-group">
+      <div class="nin-scroll-content" id="nin-first-content">
+        <div class="nin-scroll-content-left" *ngIf="firstContentTrigger == 'in'">
+          <div class="nin-content">
+            <h1>Game Development</h1>
+            <p>PLACEHOLDER TEXT LEFT</p>
+          </div>
         </div>
       </div>
     </div>
-    <img class="nin-background-second-image nin-dark-background"
-         id="nin-background-second-image"
-         src="../../../assets/images/Example_Brain.jpg"
-         alt="Me as a meme"/>
-    <div class="content-group content-group-last">
-      <div class="scroll-content">
-        <div class="content-group-left text-left">
-          <p class="content-left">PLACEHOLDER LEFT</p>
-<!--          <h2 class="content-left">Web Dev</h2>-->
+    <div class="nin-content-group" id="nin-second-content">
+      <div class="nin-scroll-content">
+        <div class="nin-scroll-content-right">
+          <div class="nin-content">
+            <h1>Web Development</h1>
+            <p>PLACEHOLDER TEXT RIGHT</p>
+          </div>
         </div>
       </div>
-      <div class="scroll-content">
-        <div class="content-group-right">
-          <h2 class="content-right">PLACEHOLDER RIGHT</h2>
+    </div>
+    <div class="nin-content-group">
+      <div class="nin-scroll-content">
+        <div class="nin-scroll-content-left">
+          <div class="nin-content">
+            <h1>Web Development</h1>
+            <p>PLACEHOLDER TEXT LEFT</p>
+          </div>
         </div>
       </div>
-      <div class="scroll-content">
-        <div class="content-group-left text-left">
-          <p class="content-left">PLACEHOLDER LEFT</p>
+    </div>
+    <div class="nin-content-group">
+      <div class="nin-scroll-content">
+        <div class="nin-scroll-content-right">
+          <div class="nin-content">
+            <h1>Web Development</h1>
+            <p>PLACEHOLDER TEXT RIGHT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nin-content-group">
+      <div class="nin-scroll-content">
+        <div class="nin-scroll-content-left">
+          <div class="nin-content">
+            <h1>Web Development</h1>
+            <p>PLACEHOLDER TEXT LEFT</p>
+          </div>
         </div>
       </div>
     </div>
