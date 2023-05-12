@@ -54,4 +54,8 @@ export class NavComponent {
       this.isShowNavContent = !this.isShowNavContent
     )
   }
+
+  openLinkAt(targetUrl: string){
+    window.open(targetUrl, "_blank");
+  }
 }
