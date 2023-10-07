@@ -1,0 +1,29 @@
+<div class="mse-home-animation">
+
+    <ng-template [ngIf]="layoutService.getScreenSize === 'Medium' || layoutService.getScreenSize === 'Large'"
+                 [ngIfElse]="smallLayout">
+        <mse-home-name-animation-desktop></mse-home-name-animation-desktop>
+    </ng-template>
+
+    <ng-template #smallLayout>
+        <mse-home-name-animation-mobile></mse-home-name-animation-mobile>
+    </ng-template>
+
+</div>
+
+<div class="mse-home-scroll-arrow" [@scroll]="scrollHint">
+
+    <ng-template [ngIf]="scrollHint">
+        <div>
+            <div [@fadeTextInOut]="{value:animationState, params:{time: animationTime}}">
+                SCROLL
+            </div>
+            <div>
+                <mat-icon [@boundingArrowInOut]="{value:animationState, params:{time: animationTime}}">
+                    keyboard_double_arrow_down
+                </mat-icon>
+            </div>
+        </div>
+    </ng-template>
+
+</div>

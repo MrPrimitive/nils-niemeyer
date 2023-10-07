@@ -1,0 +1,27 @@
+.mse-not-found-component {
+  height: calc(100vh - 16.5em);
+  margin: 5em 5em 5em 5em;
+}
+
+.warning-404-icon {
+  height: 5em;
+  padding-top: 5em;
+
+  mat-icon {
+    transform: scale(5);
+
+  }
+}
+
+.headline-1 {
+  font-size: 5vw;
+  height: 10vh;
+}
+
+.mse-not-found-text {
+  text-align: center;
+  border: #b72727 solid 1px;
+  border-top-left-radius: 5em;
+  border-bottom-right-radius: 5em;
+  margin: 0 20% 0 20%;
+}

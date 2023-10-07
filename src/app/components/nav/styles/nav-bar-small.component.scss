@@ -1,0 +1,23 @@
+.mse-nav-bar {
+  margin: 1em;
+  display: flex;
+
+  .mse-nav-bar-left {
+    .mse-nav-bar-logo {
+      height: 4em;
+
+    }
+  }
+
+  .mse-nav-company-logo:hover {
+    cursor: pointer;
+  }
+
+  .mse-nav-bar-right {
+    width: 100%;
+    place-items: center;
+    place-content: center;
+    display: flex;
+    margin-right: 4em;
+  }
+}
