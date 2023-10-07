@@ -104,6 +104,10 @@
   width: fit-content;
 }
 
+#nin-first-content {
+  animation-fill-mode: forwards;
+}
+
 
 @media screen and (max-width: 576px) {
   //html {
