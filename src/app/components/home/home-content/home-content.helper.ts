@@ -4,7 +4,7 @@ import {NavigationEnd, Router} from '@angular/router'
 @Injectable({
 	providedIn: 'root'
 })
-export class HomeNameAnimationHelper {
+export class HomeContentHelper {
 	playAnimation: boolean = true
 
 	constructor(private router: Router) {

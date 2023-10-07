@@ -1,5 +1,5 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
-import {NavigationEnd, Router} from "@angular/router";
+import {Component, OnDestroy, OnInit} from '@angular/core'
+import {Router} from '@angular/router'
 import {HomeNameAnimationHelper} from './home-name-animation.helper'
 
 @Component({
@@ -8,7 +8,6 @@ import {HomeNameAnimationHelper} from './home-name-animation.helper'
 	styleUrls: ['./styles/home-name-animation-desktop.component.scss']
 })
 export class HomeNameAnimationDesktopComponent extends HomeNameAnimationHelper implements OnInit, OnDestroy {
-
 
 	constructor(router: Router) {
 		super(router)
