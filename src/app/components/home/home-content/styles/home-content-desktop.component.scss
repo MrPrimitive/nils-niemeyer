@@ -8,49 +8,79 @@
 
 .content {
   width: 100%;
-  margin-bottom: 200px;
-  //justify-content: center;
-  //text-align: center;
+  padding-bottom: 200px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(189, 189, 189, 0.20) 10%,rgba(189, 189, 189, 0.20) 95%, rgba(255, 255, 255, 0));
 }
 
-.content-center-line {
-  position: absolute;
-  border: rgba(14, 22, 26, 0.50) 5px solid;
-  height: 100%;
-  margin-left: 50%;
-  margin-right: 50%;
-}
+.content-center {
+  padding-top: 5em;
+  font-size: 2em;
+  color: ghostwhite;
+  text-align: center;
 
-.content-dot {
-  position: absolute;
-  left: -10px;
-  width: 20px;
-  height: 20px;
-  background: #b72727;
-  border-radius: 50%;
+  .content-time-year {
+    padding-bottom: 1em;
+  }
 }
 
 .content-left {
   color: ghostwhite;
   margin-right: 50%;
-  padding-right: 10%;
-  padding-bottom: 5em;
+  padding-right: 2em;
+  padding-left: 10%;
   text-align: right;
   height: 100px;
+
+  .content-title-line-left {
+    padding-top: 0.5em;
+    border-top: ghostwhite 2px solid;
+    padding-bottom: 0.8em;
+  }
+
+  .content-title-left {
+    font-size: 2em;
+    padding-right: 20%;
+  }
+
+  .content-sub-title-left {
+    font-size: 1.5em;
+    padding-right: 20%;
+    font-style: italic;
+  }
+
+  .content-content-left {
+    font-size: 1em;
+    padding-right: 20%;
+  }
 }
 
 .content-right {
+  color: #0e161a;
   margin-left: 50%;
-  padding-left: 10%;
+  padding-left: 2em;
+  padding-right: 10%;
   text-align: left;
-  padding-bottom: 5em;
   height: 100px;
-}
 
-.content-title {
-  font-size: 3em;
-}
+  .content-title-line-right {
+    padding-top: 0.5em;
+    border-top: #0e161a 2px solid;
+    padding-bottom: 0.8em;
+  }
 
-.content-content {
-  font-size: 1em;
+  .content-title-right {
+    font-size: 2em;
+    padding-left: 20%;
+  }
+
+  .content-sub-title-right {
+    font-size: 1.5em;
+    padding-left: 20%;
+    font-style: italic;
+  }
+
+  .content-content-right {
+    font-size: 1em;
+    padding-left: 20%;
+  }
 }
