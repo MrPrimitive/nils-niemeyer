@@ -1,19 +1,1 @@
-@import "../../../../../assets/styles/vars";
 
-.mse-home-background-image-container {
-  min-width: $view-width;
-  max-width: $view-width;
-  min-height: $view-height;
-  max-height: $view-height;
-  overflow: hidden;
-}
-
-img {
-  background-image: linear-gradient(rgba(189, 189, 189), rgba(255, 255, 255));
-  //max-height: calc(100vh);
-  //max-width: calc(100vw);
-  object-fit: cover;
-  object-position: -50% -50%;
-  //scale: 0.5;
-  overflow-clip-margin: unset;
-}

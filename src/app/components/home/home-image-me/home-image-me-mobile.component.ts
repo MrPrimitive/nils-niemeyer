@@ -5,7 +5,7 @@ import {HomeImageMeHelper} from './home-image-me.helper'
 @Component({
 	selector: 'mse-home-image-me-mobile',
 	templateUrl: './templates/home-image-me-mobile.component.html',
-	styleUrls: ['./styles/home-image-me-mobile.component.scss']
+	styleUrls: ['./styles/home-image-me.component.scss','./styles/home-image-me-mobile.component.scss']
 })
 export class HomeImageMeMobileComponent extends HomeImageMeHelper implements OnInit, OnDestroy {
 	constructor(router: Router) {

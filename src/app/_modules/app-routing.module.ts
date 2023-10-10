@@ -6,11 +6,11 @@ import {AboutComponent, HomeComponent, NotFoundComponent} from '../pages'
 const routes: Routes = [
 	{
 		path: '',
-		component: LandingPageComponent
+		component: HomeComponent
 	},
 	{
 		path: 'home',
-		component: HomeComponent
+		component: LandingPageComponent
 	},
 	{
 		path: 'about',
