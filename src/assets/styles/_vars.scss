@@ -19,3 +19,6 @@ $cursor-dark: url('../icons/code_black.svg');
 $nin-primary: mat.define-palette(mat.$deep-purple-palette);
 $nin-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 $nin-warn: mat.define-palette(mat.$red-palette);
+
+$view-height: calc(100vh);
+$view-width: calc(100vw);

@@ -3,20 +3,40 @@ import {Router} from '@angular/router'
 import {HomeNameAnimationHelper} from './home-name-animation.helper'
 
 @Component({
-	selector: 'mse-home-name-animation-desktop',
-	templateUrl: './templates/home-name-animation-desktop.component.html',
-	styleUrls: ['./styles/home-name-animation-desktop.component.scss']
+  selector: 'mse-home-name-animation-desktop',
+  templateUrl: './templates/home-name-animation-desktop.component.html',
+  styleUrls: ['./styles/home-name-animation-desktop.component.scss'],
 })
 export class HomeNameAnimationDesktopComponent extends HomeNameAnimationHelper implements OnInit, OnDestroy {
+  public scrollHomeNameHello: number = 20;
+  public scrollHomeNameName: number = 20;
 
-	constructor(router: Router) {
-		super(router)
-	}
+  constructor(router: Router) {
+    super(router)
+  }
 
 
-	ngOnInit(): void {
-	}
+  ngOnInit(): void {
+    window.addEventListener('scroll', this.scrollEvent);
+  }
 
-	ngOnDestroy(): void {
-	}
+  ngOnDestroy(): void {
+  }
+
+  private scrollEvent(event: any) {
+    const halfScreenHeight: number = window.screen.height / 2
+    const screenHeight: number = window.screen.height;
+
+    const mseHomeNameMyNameAnimationElement: HTMLElement | null = document.getElementById('mse-home-name-my-name-animation')
+    if (mseHomeNameMyNameAnimationElement) {
+      const paddingTop: string = (40 - ((window.scrollY / halfScreenHeight) * 20)) + 'px';
+      console.log(paddingTop)
+      mseHomeNameMyNameAnimationElement.style.paddingTop = paddingTop;
+    }
+
+    const mseHomeAnimationElement: HTMLElement | null = document.getElementById('mse-home-name-animation')
+    if (mseHomeAnimationElement) {
+      mseHomeAnimationElement.style.opacity = String(1 - window.scrollY / screenHeight);
+    }
+  }
 }
