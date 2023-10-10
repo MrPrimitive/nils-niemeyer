@@ -23,11 +23,11 @@ export class HomeNameAnimationDesktopComponent extends HomeNameAnimationHelper i
   ngOnDestroy(): void {
   }
 
-  private scrollEvent(event: any) {
-    const halfScreenHeight: number = window.screen.height / 2
-    const quadScreenHeight: number = halfScreenHeight / 2
+  private scrollEvent(event: any): void {
     const screenHeight: number = window.screen.height;
-    const screenHeightTimesFive: number = window.screen.height * 5;
+    const halfScreenHeight: number = screenHeight / 2
+    const quadScreenHeight: number = halfScreenHeight / 2
+    const screenHeightTimesFive: number = screenHeight * 5;
 
     const mseHomeNameMyNameAnimationElement: HTMLElement | null = document.getElementById('mse-home-name-my-name-animation')
     if (mseHomeNameMyNameAnimationElement) {
