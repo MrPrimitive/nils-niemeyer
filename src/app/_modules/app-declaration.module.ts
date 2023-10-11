@@ -1,14 +1,17 @@
 import {AppComponent} from '../app.component'
 import {
-	HomeContentComponent,
-	HomeContentDesktopComponent,
-	HomeContentMobileComponent,
+	FooterComponent,
+	FooterLargeComponent,
+	FooterSmallComponent,
+	HomeContentEducationComponent,
+	HomeContentEducationLargeComponent,
+	HomeContentEducationSmallComponent,
+	HomeContentExperienceComponent,
+	HomeContentExperienceLargeComponent,
+	HomeContentExperienceSmallComponent,
 	HomeImageMeComponent,
 	HomeImageMeDesktopComponent,
 	HomeImageMeMobileComponent,
-	HomeLogoAnimationComponent,
-	HomeLogoAnimationDesktopComponent,
-	HomeLogoAnimationMobileComponent,
 	HomeNameAnimationComponent,
 	HomeNameAnimationDesktopComponent,
 	HomeNameAnimationMobileComponent,
@@ -21,25 +24,26 @@ import {
 import {AboutComponent, HomeComponent, NotFoundComponent, ProductComponent} from '../pages'
 
 export const DECLARATION_MODULES_COMPONENTS = [
-
 	NavBarComponent,
 	NavBarLargeComponent,
 	NavBarSmallComponent,
+	FooterComponent,
+	FooterLargeComponent,
+	FooterSmallComponent,
+	NotFoundLargeComponent,
+	NotFoundSmallComponent,
 	HomeNameAnimationComponent,
 	HomeNameAnimationDesktopComponent,
 	HomeNameAnimationMobileComponent,
 	HomeImageMeComponent,
 	HomeImageMeDesktopComponent,
 	HomeImageMeMobileComponent,
-	HomeContentComponent,
-	HomeContentDesktopComponent,
-	HomeContentMobileComponent,
-	NotFoundLargeComponent,
-	NotFoundSmallComponent,
-	// OLD
-	HomeLogoAnimationComponent,
-	HomeLogoAnimationDesktopComponent,
-	HomeLogoAnimationMobileComponent
+	HomeContentExperienceComponent,
+	HomeContentExperienceLargeComponent,
+	HomeContentExperienceSmallComponent,
+	HomeContentEducationComponent,
+	HomeContentEducationLargeComponent,
+	HomeContentEducationSmallComponent
 ]
 
 export const DECLARATION_MODULES_PAGES = [

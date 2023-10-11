@@ -1,6 +1,13 @@
+.mse-view-height {
+  height: calc(100vh)
+}
+
 .mse-not-found-component {
-  height: calc(100vh - 16.5em);
-  margin: 5em 5em 5em 5em;
+  position: fixed;
+  top: 40%;
+  text-align: center;
+  left: 0;
+  right: 0;
 }
 
 .warning-404-icon {
@@ -20,8 +27,5 @@
 
 .mse-not-found-text {
   text-align: center;
-  border: #b72727 solid 1px;
-  border-top-left-radius: 5em;
-  border-bottom-right-radius: 5em;
   margin: 0 20% 0 20%;
 }

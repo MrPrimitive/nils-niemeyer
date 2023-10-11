@@ -1,30 +1,3 @@
-/* setting up mandatory scroll-snap on parent */
-.x.mandatory-scroll-snapping {
-  scroll-snap-type: x mandatory;
-}
-
-.y.mandatory-scroll-snapping {
-  scroll-snap-type: y mandatory;
-}
-
-/* defining scroll-snap alignment on children */
-div > div {
-  scroll-snap-align: center;
-}
-
-/* defining scroll-snap stop on children */
-.always-stop > div {
-  scroll-snap-stop: always;
-}
-
-.always-stop-odd > div:nth-of-type(odd) {
-  scroll-snap-stop: always;
-}
-
-.always-stop-even > div:nth-of-type(even) {
-  scroll-snap-stop: always;
-}
-
-.normal-stop > div {
-  scroll-snap-stop: normal;
+.mse-view-height {
+  height: calc(100vh)
 }

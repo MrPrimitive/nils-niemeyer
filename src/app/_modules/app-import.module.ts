@@ -8,12 +8,12 @@ import {MatListModule} from '@angular/material/list'
 import {MatProgressBarModule} from '@angular/material/progress-bar'
 
 export const APP_IMPORT_MODULES = [
-  BrowserModule,
-  AppRoutingModule,
-  BrowserAnimationsModule,
-  MatButtonModule,
-  MatSlideToggleModule,
-  MatCardModule,
-  MatListModule,
-  MatProgressBarModule
-];
+	BrowserModule,
+	AppRoutingModule,
+	BrowserAnimationsModule,
+	MatButtonModule,
+	MatSlideToggleModule,
+	MatCardModule,
+	MatListModule,
+	MatProgressBarModule
+]

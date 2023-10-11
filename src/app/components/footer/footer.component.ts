@@ -4,20 +4,20 @@ import {LayoutService} from "../../_services/layout.service";
 @Component({
   selector: 'mse-footer',
   template: `
-      <div class="nav-bar-component">
+      <div class="mse-footer-component">
           <ng-template [ngIf]="layoutService.getScreenSize === 'Medium' || layoutService.getScreenSize === 'Large'"
                        [ngIfElse]="smallLayout">
-              <mse-nav-large></mse-nav-large>
+              <mse-footer-large></mse-footer-large>
           </ng-template>
 
           <ng-template #smallLayout>
-              <mse-nav-small></mse-nav-small>
+              <mse-footer-small></mse-footer-small>
           </ng-template>
       </div>
 	`,
-  styleUrls: ['styles/nav-bar.component.scss']
+  styleUrls: ['styles/footer.component.scss']
 })
-export class NavBarComponent {
+export class FooterComponent {
   constructor(public layoutService: LayoutService) {
   }
 }
