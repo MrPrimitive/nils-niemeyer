@@ -1,0 +1,128 @@
+.mse-home-experience-content-header {
+  color: ghostwhite;
+  font-size: 3em;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.mse-home-experience-title-content {
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(189, 189, 189, 0.20) 10%, rgba(189, 189, 189, 0.20) 95%, rgba(255, 255, 255, 0));
+}
+
+.mse-home-experience-title-content-center {
+  font-size: 2em;
+  text-align: left;
+  padding-left: 20px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 80%);
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  .mse-home-experience-title-content-title {
+    font-size: 2em;
+  }
+}
+
+// new version
+
+.mse-home-experience-content {
+  width: 100%;
+
+  .mse-home-experience-center-line {
+    position: absolute;
+    background: rgba(14, 22, 26, 0.50);
+    border-radius: 5px;
+    width: 8px;
+    height: 10%;
+    margin-left: 50%;
+    left: -4px;
+  }
+
+}
+
+.mse-home-experience-year-content {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 5%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0));
+  background-size: 10px 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  height: auto;
+}
+
+.mse-home-experience-year-title {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 80%);
+  padding-top: 1em;
+  padding-left: 20px;
+  padding-bottom: 1em;
+  font-size: 2em;
+  display: inline-flex;
+  width: -webkit-fill-available;
+  //justify-content: left;
+
+
+  .mse-home-experience-year-split {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.mse-home-experience-card {
+  border-top: ghostwhite 2px solid;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 4em;
+  padding-top: 4em;
+}
+
+.mse-home-experience-card-content {
+  padding-top: 1em;
+  font-size: 1.2em;
+}
+
+.mse-home-experience-card-right {
+  text-align: left;
+  margin-left: 20px;
+  padding-left: 20px;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%);
+
+  .mse-home-experience-card-header-right {
+  }
+
+  .mse-home-experience-card-content-right {
+
+  }
+}
+
+.mse-home-experience-card-year {
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.mse-home-experience-card-title {
+  font-size: 2em;
+  padding-bottom: 0.2em;
+}
+
+.mse-home-experience-card-sub-location-title {
+  font-size: 1em;
+  font-style: italic;
+  padding-bottom: 0.1em;
+}
+
+.mse-home-experience-card-sub-team-title {
+  font-size: 1em;
+  font-style: italic;
+  padding-bottom: 0.1em;
+}
+
+.mse-home-experience-card-sub-job-title {
+  font-size: 1em;
+  font-style: italic;
+  padding-bottom: 0.1em;
+}
+
+.mse-home-experience-card-sub-sub-title {
+  font-size: 1em;
+  font-style: italic;
+}
