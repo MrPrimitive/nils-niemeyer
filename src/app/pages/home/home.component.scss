@@ -3,8 +3,16 @@
   align-content: center;
 }
 
-.mse-home-background-image {
+.mse-home-background-image-me {
   height: calc(90vh);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+
+.mse-home-background-image {
+  height: calc(20vh);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
