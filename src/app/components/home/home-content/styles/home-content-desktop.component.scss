@@ -1,4 +1,4 @@
-.mse-home-content-title {
+.mse-home-experience-content-header {
   color: ghostwhite;
   font-size: 5em;
   width: 100%;
@@ -6,81 +6,137 @@
   padding-bottom: 200px;
 }
 
-.content {
+.mse-home-experience-title-content {
   width: 100%;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(189, 189, 189, 0.20) 10%,rgba(189, 189, 189, 0.20) 95%, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(189, 189, 189, 0.20) 10%, rgba(189, 189, 189, 0.20) 95%, rgba(255, 255, 255, 0));
 }
 
-.content-center {
-  padding-top: 5em;
+.mse-home-experience-title-content-center {
   font-size: 2em;
-  color: ghostwhite;
   text-align: center;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 80%);
+  padding-top: 1em;
+  padding-bottom: 1em;
 
-  .content-time-year {
-    padding-bottom: 1em;
+  .mse-home-experience-title-content-title {
+    font-size: 3em;
   }
 }
 
-.content-left {
-  color: ghostwhite;
-  margin-right: 50%;
-  padding-right: 2em;
-  padding-left: 10%;
+// new version
+
+.mse-home-experience-content {
+  width: 100%;
+
+  .mse-home-experience-center-line {
+    position: absolute;
+    background: rgba(14, 22, 26, 0.50);
+    border-radius: 5px;
+    width: 8px;
+    height: 10%;
+    margin-left: 50%;
+    left: -4px;
+  }
+
+}
+
+.mse-home-experience-year-content {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 5%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0));
+  background-size: 10px 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: auto;
+}
+
+.mse-home-experience-year-title {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0) 80%);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 2em;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+
+  .mse-home-experience-year-split {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.mse-home-experience-card {
+  border-top: ghostwhite 2px solid;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 4em;
+  padding-top: 4em;
+}
+
+.mse-home-experience-card-content {
+  padding-top: 1em;
+  font-size: 1.2em;
+}
+
+.mse-home-experience-card-left {
   text-align: right;
-  height: 100px;
+  margin-right: calc(50% + 20px);
+  padding-right: 20px;
+  color: #0e161a;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%);
 
-  .content-title-line-left {
-    padding-top: 0.5em;
-    border-top: ghostwhite 2px solid;
-    padding-bottom: 0.8em;
+  .mse-home-experience-card-header-left {
+
   }
 
-  .content-title-left {
-    font-size: 2em;
-    padding-right: 20%;
-  }
+  .mse-home-experience-card-content-left {
 
-  .content-sub-title-left {
-    font-size: 1.5em;
-    padding-right: 20%;
-    font-style: italic;
-  }
-
-  .content-content-left {
-    font-size: 1em;
-    padding-right: 20%;
   }
 }
 
-.content-right {
-  color: #0e161a;
-  margin-left: 50%;
-  padding-left: 2em;
-  padding-right: 10%;
+.mse-home-experience-card-right {
   text-align: left;
-  height: 100px;
+  margin-left: calc(50% + 20px);
+  padding-left: 20px;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%);
 
-  .content-title-line-right {
-    padding-top: 0.5em;
-    border-top: #0e161a 2px solid;
-    padding-bottom: 0.8em;
+  .mse-home-experience-card-header-right {
   }
 
-  .content-title-right {
-    font-size: 2em;
-    padding-left: 20%;
-  }
+  .mse-home-experience-card-content-right {
 
-  .content-sub-title-right {
-    font-size: 1.5em;
-    padding-left: 20%;
-    font-style: italic;
   }
+}
 
-  .content-content-right {
-    font-size: 1em;
-    padding-left: 20%;
-  }
+.mse-home-experience-card-year {
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.mse-home-experience-card-title {
+  font-size: 3em;
+  padding-bottom: 0.5em;
+}
+
+.mse-home-experience-card-sub-location-title {
+  font-size: 1.8em;
+  font-style: italic;
+  padding-bottom: 0.2em;
+}
+
+.mse-home-experience-card-sub-team-title {
+  font-size: 1.5em;
+  font-style: italic;
+  padding-bottom: 0.2em;
+}
+
+.mse-home-experience-card-sub-job-title {
+  font-size: 1.5em;
+  font-style: italic;
+  padding-bottom: 0.2em;
+}
+
+.mse-home-experience-card-sub-sub-title {
+  font-size: 1.5em;
+  font-style: italic;
 }

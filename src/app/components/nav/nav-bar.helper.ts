@@ -6,6 +6,7 @@ import {Router} from "@angular/router";
 })
 export class NavBarHelper {
   navMenuState: boolean = false
+  navBarMainClass: string = 'mse-nav-bar'
 
   constructor(private router: Router) {
   }
@@ -13,6 +14,12 @@ export class NavBarHelper {
 
   openNavMenu(): void {
     this.navMenuState = !this.navMenuState
+    if (this.navMenuState) {
+      this.navBarMainClass = 'mse-nav-bar'
+    } else {
+      this.navBarMainClass = 'mse-nav-bar-expand'
+    }
+
   }
 
   navigateTo(url: string): void {

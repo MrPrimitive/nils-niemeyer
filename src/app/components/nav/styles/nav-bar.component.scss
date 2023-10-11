@@ -1,11 +1,11 @@
 .nav-bar-component {
   position: fixed;
   width: 100%;
-  background-image: linear-gradient(rgba(189, 189, 189, 0.70) 50%, rgba(255, 255, 255, 0));
+  height: 4em;
 }
 
 .mse-nav-link {
-  margin: 1em;
+  //margin: 1em;
   &:hover {
     cursor: pointer;
     font-style: italic;

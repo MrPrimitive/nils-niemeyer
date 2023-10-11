@@ -1,11 +1,13 @@
 .mse-nav-bar {
-  margin: 1em;
+  padding: 1em;
   display: flex;
+  height: 4em;
+  background-image: linear-gradient(rgba(189, 189, 189, 0.9) 50%, rgba(255, 255, 255, 0));
+
 
   .mse-nav-bar-left {
     .mse-nav-bar-logo {
-      height: 4em;
-
+      width: 4em;
     }
   }
 
@@ -20,4 +22,21 @@
     display: flex;
     margin-right: 4em;
   }
+
 }
+
+.mse-nav-bar-expand {
+  background: rgba(189, 189, 189, 0.8) ;
+
+}
+
+.nav-menu {
+  background-image: linear-gradient(rgba(189, 189, 189, 1), rgba(189, 189, 189, 1) 90%, rgba(255, 255, 255, 0));
+}
+
+.mse-nav-link {
+  margin: 0 1em 1em 1em;
+  font-size: 2em;
+  text-align: center;
+}
+

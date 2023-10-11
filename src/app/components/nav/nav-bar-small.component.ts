@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, OnDestroy, OnInit, Renderer2, ViewChild} from '@angular/core';
 import {Router} from "@angular/router";
 import {ANIMATION_NAV_EXPAND_MENU, ANIMATION_NAV_TURN_ARROW} from '../../animations';
 import {NavBarHelper} from "./nav-bar.helper";
@@ -14,9 +14,11 @@ export class NavBarSmallComponent extends NavBarHelper implements OnInit, OnDest
   @ViewChild('navMenuElement') navMenuElement: ElementRef | undefined
   @ViewChild('navMenuButtonElement') navMenuButtonElement: ElementRef | undefined
 
+  private rendere: Renderer2;
 
-  constructor(router: Router) {
+  constructor(router: Router, render: Renderer2) {
     super(router)
+    this.rendere = render;
   }
 
   ngOnInit(): void {
@@ -36,6 +38,13 @@ export class NavBarSmallComponent extends NavBarHelper implements OnInit, OnDest
     if (!this.navMenuButtonElement?.nativeElement.contains(evt.target)
       && !this.navMenuElement?.nativeElement.contains(evt.target)) {
       this.navMenuState = false;
+    }
+    const element: HTMLElement | null = document.getElementById('mse-nav-bar');
+    if (this.navMenuState) {
+      // this.rendere.removeClass(element, 'mse-nav-bar')
+      this.rendere.addClass(element, 'mse-nav-bar-expand')
+    } else {
+      this.rendere.removeClass(element, 'mse-nav-bar-expand')
     }
   }
 
