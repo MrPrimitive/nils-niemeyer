@@ -2,42 +2,57 @@
     <div class="mse-footer-large-content">
 
         <div class="mse-footer-large-content-left">
-            <div>Nils Niemeyer</div>
-            <div>Makoto Studio Entertainment</div>
+            <div class="mse-clickable"
+                 (click)="viewPage('/')">
+                Nils Niemeyer
+            </div>
+            <div class="mse-clickable"
+                 (click)="openLink('https://www.makotostudio.ch')">
+                Makoto Studio Entertainment
+            </div>
+            <div class="mse-clickable"
+                 (click)="viewPage('privacy-policy')">
+                Privacy
+            </div>
         </div>
 
 
         <div class="mse-footer-large-content-right">
-            <div>Privacy</div>
             <div class="mse-footer-large-content-social-media">
                 <div class="mse-social-media-logo-container">
-                    <img class="mse-social-media-logo"
+                    <img class="mse-social-media-logo mse-clickable"
+                         (click)="openLink('https://github.com/MrPrimitive')"
                          alt="GitHub Logo"
                          src="../../../../assets/icons/github_logo.svg">
                 </div>
                 <div class="mse-social-media-logo-container">
-                    <img class="mse-social-media-logo"
-                         alt="GitHub Logo"
-                         src="../../../../assets/icons/instagram_logo.svg">
-                </div>
-                <div class="mse-social-media-logo-container">
-                    <img class="mse-social-media-logo"
-                         alt="GitHub Logo"
-                         src="../../../../assets/icons/linkedin_logo.svg">
-                </div>
-                <div class="mse-social-media-logo-container">
-                    <img class="mse-social-media-logo"
-                         alt="GitHub Logo"
-                         src="../../../../assets/icons/reddit_logo.svg">
-                </div>
-                <div class="mse-social-media-logo-container">
-                    <img class="mse-social-media-logo"
-                         alt="GitHub Logo"
+                    <img class="mse-social-media-logo mse-clickable"
+                         (click)="openLink('https://twitter.com/MakotoStudioEnt')"
+                         alt="twitter Logo"
                          src="../../../../assets/icons/twitter_logo.svg">
                 </div>
                 <div class="mse-social-media-logo-container">
-                    <img class="mse-social-media-logo"
-                         alt="GitHub Logo"
+                    <img class="mse-social-media-logo mse-clickable"
+                         (click)="openLink('')"
+                         alt="instagram Logo"
+                         src="../../../../assets/icons/instagram_logo.svg">
+                </div>
+                <div class="mse-social-media-logo-container">
+                    <img class="mse-social-media-logo mse-clickable"
+                         (click)="openLink('')"
+                         alt="linkedin Logo"
+                         src="../../../../assets/icons/linkedin_logo.svg">
+                </div>
+                <div class="mse-social-media-logo-container">
+                    <img class="mse-social-media-logo mse-clickable"
+                         (click)="openLink('')"
+                         alt="reddit Logo"
+                         src="../../../../assets/icons/reddit_logo.svg">
+                </div>
+                <div class="mse-social-media-logo-container">
+                    <img class="mse-social-media-logo mse-clickable"
+                         (click)="openLink('https://www.youtube.com/@mr.primitive1063/videos')"
+                         alt="youtuble Logo"
                          src="../../../../assets/icons/youtuble_logo.svg">
                 </div>
             </div>

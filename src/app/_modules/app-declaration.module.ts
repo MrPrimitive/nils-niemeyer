@@ -9,9 +9,12 @@ import {
 	HomeContentExperienceComponent,
 	HomeContentExperienceLargeComponent,
 	HomeContentExperienceSmallComponent,
-	HomeImageMeComponent,
-	HomeImageMeDesktopComponent,
-	HomeImageMeMobileComponent,
+	HomeContentImageEducationComponent,
+	HomeContentImageEducationLargeComponent,
+	HomeContentImageEducationSmallComponent,
+	HomeContentImageMeComponent,
+	HomeContentImageMeLargeComponent,
+	HomeContentImageMeSmallComponent,
 	HomeNameAnimationComponent,
 	HomeNameAnimationDesktopComponent,
 	HomeNameAnimationMobileComponent,
@@ -19,9 +22,11 @@ import {
 	NavBarLargeComponent,
 	NavBarSmallComponent,
 	NotFoundLargeComponent,
-	NotFoundSmallComponent
+	NotFoundSmallComponent,
+	PrivacyPolicyLargeComponent,
+	PrivacyPolicySmallComponent
 } from '../components'
-import {AboutComponent, HomeComponent, NotFoundComponent, ProductComponent} from '../pages'
+import {AboutComponent, HomeComponent, NotFoundComponent, PrivacyPolicyComponent, ProductComponent} from '../pages'
 
 export const DECLARATION_MODULES_COMPONENTS = [
 	NavBarComponent,
@@ -35,15 +40,20 @@ export const DECLARATION_MODULES_COMPONENTS = [
 	HomeNameAnimationComponent,
 	HomeNameAnimationDesktopComponent,
 	HomeNameAnimationMobileComponent,
-	HomeImageMeComponent,
-	HomeImageMeDesktopComponent,
-	HomeImageMeMobileComponent,
+	HomeContentImageMeComponent,
+	HomeContentImageMeLargeComponent,
+	HomeContentImageMeSmallComponent,
+	HomeContentImageEducationComponent,
+	HomeContentImageEducationLargeComponent,
+	HomeContentImageEducationSmallComponent,
 	HomeContentExperienceComponent,
 	HomeContentExperienceLargeComponent,
 	HomeContentExperienceSmallComponent,
 	HomeContentEducationComponent,
 	HomeContentEducationLargeComponent,
-	HomeContentEducationSmallComponent
+	HomeContentEducationSmallComponent,
+	PrivacyPolicyLargeComponent,
+	PrivacyPolicySmallComponent
 ]
 
 export const DECLARATION_MODULES_PAGES = [
@@ -51,7 +61,8 @@ export const DECLARATION_MODULES_PAGES = [
 	HomeComponent,
 	NotFoundComponent,
 	ProductComponent,
-	AboutComponent
+	AboutComponent,
+	PrivacyPolicyComponent
 ]
 
 export const DECLARATIONS_MODULES = [

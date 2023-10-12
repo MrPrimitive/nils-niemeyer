@@ -1,4 +1,13 @@
 .mse-footer-component {
   width: 100%;
-  background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, #ffffff 10%, #ffffff);
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, #ffffff 5%, #ffffff);
+}
+
+.mse-clickable {
+
+  &:hover {
+    cursor: pointer;
+    font-style: italic;
+    text-decoration: underline;
+  }
 }

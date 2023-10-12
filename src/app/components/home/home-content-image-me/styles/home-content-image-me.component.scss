@@ -1,0 +1,22 @@
+@import "../../../../../assets/styles/vars";
+
+.mse-home-background-image-container {
+  min-width: $view-width;
+  max-width: $view-width;
+  min-height: $view-height;
+  max-height: $view-height;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  min-height: 100%;
+  min-width: 100%;
+  max-height: $view-height;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}

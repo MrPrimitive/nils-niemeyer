@@ -1,3 +1,30 @@
 .mse-footer {
-  height: calc(40vh);
+  padding: 4em 1em 1em;
+}
+
+.mse-footer-large-content {
+  padding: 1em;
+  text-align: center;
+}
+
+.mse-footer-large-content-links {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2) 5%, rgba(0, 0, 0, 0.2) 95%, rgba(255, 255, 255, 0));
+  background-size: 10px 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  div {
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+}
+
+.mse-social-media-logo-container {
+  padding: 1em;
+}
+
+.mse-social-media-logo {
+  width: 2em;
 }
