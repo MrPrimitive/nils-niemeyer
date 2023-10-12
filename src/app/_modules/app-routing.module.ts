@@ -7,10 +7,10 @@ const routes: Routes = [
 		path: '',
 		component: HomeComponent
 	},
-	{
-		path: 'about',
-		component: AboutComponent
-	},
+	// {
+	// 	path: 'about',
+	// 	component: AboutComponent
+	// },
 	{
 		path: 'privacy-policy',
 		component: PrivacyPolicyComponent
