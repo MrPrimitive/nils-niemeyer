@@ -14,7 +14,7 @@
     "paths": {
       "@helpers" : ["./src/app/_helper/index.ts"],
       "@services": ["./src/app/_services/index.ts"],
-      "@animations": ["./src/app/animations/index.ts"]
+      "@animations": ["./src/app/_animations/index.ts"]
     },
     "declaration": false,
     "downlevelIteration": true,
