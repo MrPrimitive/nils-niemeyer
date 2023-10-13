@@ -1,5 +1,6 @@
 export * from './nav'
-export * from './home'
 export * from './footer'
+export * from './home'
+export * from './about'
 export * from './not-found'
 export * from './privacy-policy'

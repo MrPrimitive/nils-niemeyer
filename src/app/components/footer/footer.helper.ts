@@ -2,9 +2,9 @@ import {Injectable} from '@angular/core'
 import {Router} from '@angular/router'
 
 
-@Injectable({
-	providedIn: 'root'
-})
+// @Injectable({
+// 	providedIn: 'root'
+// })
 export class FooterHelper {
 
 	constructor(private router: Router) {

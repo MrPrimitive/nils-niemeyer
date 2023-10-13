@@ -1,18 +1,14 @@
 import {Component, OnDestroy, OnInit} from '@angular/core'
-import {Router} from '@angular/router'
-import {HomeContentHelper} from './home-content.helper'
 
 @Component({
   selector: 'mse-home-content-experience-large',
   templateUrl: './templates/home-content-experience-large.component.html',
   styleUrls: ['./styles/home-content-experience-large.component.scss']
 })
-export class HomeContentExperienceLargeComponent extends HomeContentHelper implements OnInit, OnDestroy {
+export class HomeContentExperienceLargeComponent implements OnInit, OnDestroy {
 
-  constructor(router: Router) {
-    super(router)
+  constructor() {
   }
-
 
   ngOnInit(): void {
     window.addEventListener('scroll', this.scrollEvent);

@@ -17,3 +17,5 @@ export * from './home-content-experience/home-content-experience-small.component
 export * from './home-content-education/home-content-education.component'
 export * from './home-content-education/home-content-education-large.component'
 export * from './home-content-education/home-content-education-small.component'
+
+export * from './home-content/home-content.component'

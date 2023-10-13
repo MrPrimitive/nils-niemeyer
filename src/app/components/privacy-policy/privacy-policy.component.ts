@@ -1,19 +1,20 @@
-import {Component} from '@angular/core';
+import {Component} from "@angular/core";
 import {LayoutService} from "../../_services/layout.service";
 
 @Component({
-  selector: 'mse-not-found',
+  selector: 'mse-privacy-policy',
   template: `
     <ng-template [ngIf]="layoutService.getScreenSize === 'Small'" [ngIfElse]="largeLayout">
-        <mse-not-found-small></mse-not-found-small>
+      <mse-privacy-policy-small></mse-privacy-policy-small>
     </ng-template>
     <ng-template #largeLayout>
-        <mse-not-found-large></mse-not-found-large>
+      <mse-privacy-policy-large></mse-privacy-policy-large>
     </ng-template>
   `
 })
-export class NotFoundComponent {
+export class PrivacyPolicyComponent {
 
   constructor(public layoutService: LayoutService) {
   }
+
 }
