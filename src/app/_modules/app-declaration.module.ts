@@ -32,6 +32,7 @@ import {
   PrivacyPolicyComponent,
   PrivacyPolicyLargeComponent,
   PrivacyPolicySmallComponent,
+  ProductContentComponent,
 } from '../components'
 import {
   AboutPageComponent,
@@ -41,6 +42,7 @@ import {
   ProductPageComponent,
   ProjectPageComponent
 } from '../pages'
+import {ProjectContentComponent} from "../components/project";
 
 export const DECLARATION_MODULES_COMPONENTS = [
   NavBarComponent,
@@ -75,6 +77,8 @@ export const DECLARATION_MODULES_COMPONENTS = [
   AboutContentMeComponent,
   AboutContentMeLargeComponent,
   AboutContentMeSmallComponent,
+  ProductContentComponent,
+  ProjectContentComponent,
 ]
 
 export const DECLARATION_MODULES_PAGES = [
