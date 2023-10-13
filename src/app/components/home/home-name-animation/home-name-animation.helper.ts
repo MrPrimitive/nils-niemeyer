@@ -19,7 +19,7 @@ export class HomeNameAnimationHelper {
     this.animationState = this.bouncingArrowState ? 'out' : 'in'
   }
 
-  scrollEvent(event: any): void {
+  scrollEvent(): void {
     const screenHeight: number = window.screen.height;
     const halfScreenHeight: number = screenHeight / 2
     const quadScreenHeight: number = halfScreenHeight / 2
@@ -27,8 +27,7 @@ export class HomeNameAnimationHelper {
 
     const mseHomeNameMyNameAnimationElement: HTMLElement | null = document.getElementById('mse-home-name-my-name-animation')
     if (mseHomeNameMyNameAnimationElement) {
-      const paddingTop: string = (40 - ((window.scrollY / halfScreenHeight) * 20)) + 'px';
-      mseHomeNameMyNameAnimationElement.style.paddingTop = paddingTop;
+      mseHomeNameMyNameAnimationElement.style.paddingTop = (40 - ((window.scrollY / halfScreenHeight) * 20)) + 'px';
     }
 
     const mseHomeNameTitleAnimationElement: HTMLElement | null = document.getElementById('mse-home-name-title-text-animation')

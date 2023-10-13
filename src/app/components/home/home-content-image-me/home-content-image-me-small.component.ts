@@ -18,7 +18,7 @@ export class HomeContentImageMeSmallComponent implements OnInit, OnDestroy {
     window.removeEventListener('scroll', this.scrollEvent)
   }
 
-  private scrollEvent(event: any): void {
+  private scrollEvent(): void {
     const imageElement: HTMLElement | null = document.getElementById('mse-home-background-image-animation')
     if (imageElement) {
       const rect: DOMRect = imageElement.getBoundingClientRect()
