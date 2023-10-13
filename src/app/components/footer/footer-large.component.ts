@@ -4,7 +4,7 @@ import {Router} from '@angular/router'
 
 @Component({
 	selector: 'mse-footer-large',
-	templateUrl: './template/footer-large.component.html',
+	templateUrl: './templates/footer-large.component.html',
 	styleUrls: ['./styles/footer.component.scss','./styles/footer-large.component.scss']
 })
 export class FooterLargeComponent extends FooterHelper {

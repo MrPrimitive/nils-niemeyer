@@ -22,10 +22,10 @@ const routes: Routes = [
     path: 'project',
     component: ProjectPageComponent
   },
-  {
-    path: 'product',
-    component: ProductPageComponent
-  },
+  // {
+  //   path: 'product',
+  //   component: ProductPageComponent
+  // },
   {
     path: 'privacy-policy',
     component: PrivacyPolicyPageComponent

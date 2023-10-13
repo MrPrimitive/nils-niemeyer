@@ -4,7 +4,7 @@ import {Router} from '@angular/router'
 
 @Component({
   selector: 'mse-footer-small',
-  templateUrl: './template/footer-small.component.html',
+  templateUrl: './templates/footer-small.component.html',
   styleUrls: ['./styles/footer.component.scss', './styles/footer-small.component.scss']
 })
 export class FooterSmallComponent extends FooterHelper {
