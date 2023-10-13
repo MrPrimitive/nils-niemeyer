@@ -1,45 +1,40 @@
-<div class="mse-nav-bar" id="mse-nav-bar">
-  <div class="mse-nav-bar-left">
-    <div class="mse-nav-company-logo" routerLink="/">
-      <img class="mse-nav-bar-logo"
-           alt="Makoto Studio Logo"
-           src="../../../../assets/images/svgs/Logo_Black_White.svg">
+<div class="nav-bar-component">
+  <div class="mse-nav-bar" id="mse-nav-bar">
+    <div class="mse-nav-bar-left">
+      <div class="mse-nav-company-logo" routerLink="/">
+        <img class="mse-nav-bar-logo"
+             alt="Makoto Studio Logo"
+             src="../../../../assets/images/svgs/Logo_Black_White.svg">
+      </div>
+    </div>
+    <div class="mse-nav-bar-right">
+      <div class="top-nav-bar-content-item mse-nav-burger"
+           (click)="openNavMenu()"
+           #navMenuButtonElement>
+        <mat-icon [@turnArrow]="navMenuState ? 'down' : 'up'">
+          menu
+        </mat-icon>
+      </div>
     </div>
   </div>
-
-  <div class="mse-nav-bar-right">
-    <div class="top-nav-bar-content-item mse-nav-burger"
-         (click)="openNavMenu()"
-         #navMenuButtonElement>
-      <mat-icon [@turnArrow]="navMenuState ? 'down' : 'up'">
-        menu
-      </mat-icon>
+  <div class="nav-menu" [@expandMenu]="navMenuState ? 'out' : 'in'">
+    <div class="nav-menu-content" #navMenuElement>
+      <div class="nav-menu-content-item mse-nav-link"
+           (click)="navigateTo('/')">
+        <span>HOME</span>
+      </div>
+      <div class="nav-menu-content-item mse-nav-link"
+           (click)="navigateTo('/project')">
+        <span>PROJECTS</span>
+      </div>
+      <div class="nav-menu-content-item mse-nav-link"
+           (click)="navigateTo('/product')">
+        <span>PRODUCTS</span>
+      </div>
+      <div class="nav-menu-content-item mse-nav-link"
+           (click)="navigateTo('/about')">
+        <span>ABOUT</span>
+      </div>
     </div>
-  </div>
-
-</div>
-<div class="nav-menu" [@expandMenu]="navMenuState ? 'out' : 'in'">
-  <div class="nav-menu-content" #navMenuElement>
-
-    <div class="nav-menu-content-item mse-nav-link"
-         (click)="navigateTo('/')">
-      <span>HOME</span>
-    </div>
-
-    <div class="nav-menu-content-item mse-nav-link"
-         (click)="navigateTo('/about')">
-      <span>ABOUT</span>
-    </div>
-
-    <div class="nav-menu-content-item mse-nav-link"
-         (click)="navigateTo('/project')">
-      <span>PROJECTS</span>
-    </div>
-
-<!--    <div class="nav-menu-content-item mse-nav-link"-->
-<!--         (click)="navigateTo('/product')">-->
-<!--      <span>PRODUCTS</span>-->
-<!--    </div>-->
-
   </div>
 </div>

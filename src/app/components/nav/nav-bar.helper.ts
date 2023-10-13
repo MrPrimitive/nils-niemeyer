@@ -11,15 +11,11 @@ export class NavBarHelper {
   constructor(private router: Router) {
   }
 
-
   openNavMenu(): void {
     this.navMenuState = !this.navMenuState
-    if (this.navMenuState) {
-      this.navBarMainClass = 'mse-nav-bar'
-    } else {
-      this.navBarMainClass = 'mse-nav-bar-expand'
-    }
-
+    this.navBarMainClass = this.navMenuState
+      ? 'mse-nav-bar'
+      : 'mse-nav-bar-expand';
   }
 
   navigateTo(url: string): void {

@@ -1,20 +1,10 @@
 import {Component} from '@angular/core';
-import {LayoutService} from "@services";
 
 @Component({
   selector: 'mse-not-found',
-  template: `
-      <ng-template [ngIf]="layoutService.getScreenSize === 'Small'"
-                   [ngIfElse]="largeLayout">
-          <mse-not-found-small></mse-not-found-small>
-      </ng-template>
-      <ng-template #largeLayout>
-          <mse-not-found-large></mse-not-found-large>
-      </ng-template>
-  `
+  templateUrl: './templates/not-found.component.html',
+  styleUrls: ['./styles/not-found.component.scss']
 })
 export class NotFoundComponent {
 
-  constructor(public layoutService: LayoutService) {
-  }
 }

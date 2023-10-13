@@ -1,35 +1,37 @@
-<div class="mse-nav-bar">
+<div class="nav-bar-component">
+  <div class="mse-nav-bar">
 
-  <div class="mse-nav-bar-left">
-    <div class="mse-nav-company-logo" routerLink="/">
-      <img class="mse-nav-bar-logo"
-           alt="Makoto Studio Logo"
-           src="../../../../assets/images/svgs/Logo_Black_White.svg">
+    <div class="mse-nav-bar-left">
+      <div class="mse-nav-company-logo" routerLink="/">
+        <img class="mse-nav-bar-logo"
+             alt="Makoto Studio Logo"
+             src="../../../../assets/images/svgs/Logo_Black_White.svg">
+      </div>
     </div>
+
+    <div class="mse-nav-bar-right">
+
+      <div class="mse-nav-link"
+           (click)="navigateTo('/')">
+        HOME
+      </div>
+
+      <div class="mse-nav-link"
+           (click)="navigateTo('/project')">
+        PROJECTS
+      </div>
+
+      <div class="mse-nav-link"
+           (click)="navigateTo('/product')">
+        PRODUCTS
+      </div>
+
+      <div class="mse-nav-link"
+           (click)="navigateTo('/about')">
+        ABOUT
+      </div>
+
+    </div>
+
   </div>
-
-  <div class="mse-nav-bar-right">
-
-    <div class="mse-nav-link"
-         (click)="navigateTo('/')">
-      HOME
-    </div>
-
-    <div class="mse-nav-link"
-         (click)="navigateTo('/about')">
-      ABOUT
-    </div>
-
-    <div class="mse-nav-link"
-         (click)="navigateTo('/project')">
-      PROJECTS
-    </div>
-
-<!--    <div class="mse-nav-link"-->
-<!--         (click)="navigateTo('/product')">-->
-<!--      PRODUCTS-->
-<!--    </div>-->
-
-  </div>
-
 </div>

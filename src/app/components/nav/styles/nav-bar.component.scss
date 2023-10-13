@@ -2,10 +2,10 @@
   position: fixed;
   width: 100%;
   height: 4em;
+  z-index: 1;
 }
 
 .mse-nav-link {
-  //margin: 1em;
   &:hover {
     cursor: pointer;
     font-style: italic;

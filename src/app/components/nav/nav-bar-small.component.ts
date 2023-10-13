@@ -6,7 +6,7 @@ import {NavBarHelper} from "./nav-bar.helper";
 @Component({
   selector: 'mse-nav-small',
   templateUrl: './templates/nav-bar-small.component.html',
-  styleUrls: ['./styles/nav-bar-small.component.scss', './styles/nav-bar.component.scss'],
+  styleUrls: ['./styles/nav-bar.component.scss', './styles/nav-bar-small.component.scss'],
   animations: [NavigationAnimation.ANIMATION_NAV_TURN_ARROW, NavigationAnimation.ANIMATION_NAV_EXPAND_MENU],
   providers: [NavBarHelper]
 })

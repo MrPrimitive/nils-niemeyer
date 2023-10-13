@@ -1,19 +1,17 @@
-<div class="mse-about-content">
+<ng-template [ngIf]="layoutService.getScreenSize === 'Small'"
+             [ngIfElse]="largeLayout">
 
-  <ng-template [ngIf]="layoutService.getScreenSize === 'Small'"
-               [ngIfElse]="largeLayout">
+  <div class="mse-about-content">
+    <mse-about-content-me-small></mse-about-content-me-small>
+    <mse-about-content-history-small></mse-about-content-history-small>
+  </div>
 
-    <div>
-      <mse-about-content-me-small></mse-about-content-me-small>
-    </div>
+</ng-template>
+<ng-template #largeLayout>
 
-  </ng-template>
-  <ng-template #largeLayout>
+  <div class="mse-about-content-large">
+    <mse-about-content-me-large></mse-about-content-me-large>
+    <mse-about-content-history-large></mse-about-content-history-large>
+  </div>
 
-    <div>
-      <mse-about-content-me-large></mse-about-content-me-large>
-    </div>
-
-  </ng-template>
-
-</div>
+</ng-template>

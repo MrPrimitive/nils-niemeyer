@@ -1,5 +1,12 @@
 <header>
-  <mse-nav-bar></mse-nav-bar>
+  <ng-template [ngIf]="layoutService.getScreenSize === 'Small'"
+               [ngIfElse]="smallLayout">
+    <mse-nav-small></mse-nav-small>
+  </ng-template>
+
+  <ng-template #smallLayout>
+    <mse-nav-large></mse-nav-large>
+  </ng-template>
 </header>
 <div class="mse-app-content">
   <router-outlet></router-outlet>

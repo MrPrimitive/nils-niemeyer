@@ -26,7 +26,7 @@ export class NavigationAnimation {
       })),
       state('out', style({
         visibility: 'visible',
-        height: '200px',
+        height: '280px',
         opacity: 0.8,
       })),
       transition('in => out', [
