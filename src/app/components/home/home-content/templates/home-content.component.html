@@ -1,17 +1,44 @@
-<div class="mse-home-name-animation">
-  <mse-home-name-animation></mse-home-name-animation>
-</div>
+<ng-template [ngIf]="layoutService.getScreenSize === 'Small'"
+             [ngIfElse]="smallLayout">
 
-<div>
-  <div class="mse-home-background-image-me">
-    <mse-home-content-image-me></mse-home-content-image-me>
+  <div class="mse-home-name-animation">
+    <mse-home-name-animation-small></mse-home-name-animation-small>
   </div>
 
-  <div class="mse-home-content">
-    <mse-home-content-experience></mse-home-content-experience>
+  <div>
+    <div class="mse-home-background-image-me">
+      <mse-home-content-image-me-small></mse-home-content-image-me-small>
+    </div>
+
+    <div class="mse-home-content">
+      <mse-home-content-experience-small></mse-home-content-experience-small>
+    </div>
+
+    <div class="mse-home-content">
+      <mse-home-content-education-small></mse-home-content-education-small>
+    </div>
   </div>
 
-  <div class="mse-home-content">
-    <mse-home-content-education></mse-home-content-education>
+</ng-template>
+
+<ng-template #smallLayout>
+
+  <div class="mse-home-name-animation">
+    <mse-home-name-animation-large></mse-home-name-animation-large>
   </div>
-</div>
+
+  <div>
+    <div class="mse-home-background-image-me">
+      <mse-home-content-image-me-large></mse-home-content-image-me-large>
+    </div>
+
+    <div class="mse-home-content">
+      <mse-home-content-experience-large></mse-home-content-experience-large>
+    </div>
+
+    <div class="mse-home-content">
+      <mse-home-content-education-large></mse-home-content-education-large>
+    </div>
+  </div>
+
+</ng-template>

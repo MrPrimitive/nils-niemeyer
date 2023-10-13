@@ -1,4 +1,5 @@
 import {Component} from "@angular/core";
+import {LayoutService} from "@services";
 
 @Component({
   selector: 'mse-project-content',
@@ -7,4 +8,6 @@ import {Component} from "@angular/core";
 })
 export class ProjectContentComponent {
 
+  constructor(public layoutService: LayoutService) {
+  }
 }

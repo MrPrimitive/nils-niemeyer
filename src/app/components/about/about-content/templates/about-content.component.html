@@ -1,7 +1,19 @@
 <div class="mse-about-content">
 
-  <div class="mse-about-content-me">
-    <mse-about-content-me></mse-about-content-me>
-  </div>
+  <ng-template [ngIf]="layoutService.getScreenSize === 'Small'"
+               [ngIfElse]="largeLayout">
+
+    <div>
+      <mse-about-content-me-small></mse-about-content-me-small>
+    </div>
+
+  </ng-template>
+  <ng-template #largeLayout>
+
+    <div>
+      <mse-about-content-me-large></mse-about-content-me-large>
+    </div>
+
+  </ng-template>
 
 </div>

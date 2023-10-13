@@ -1,26 +1,25 @@
-import {Component, OnDestroy, OnInit} from '@angular/core'
+export class HomeNameAnimationHelper {
+  public bouncingArrowState: boolean = true
+  public animationTime: string = '1s'
+  public animationState: string = 'out'
+  public scrollHint: boolean = true
+  public scrollHomeNameHello: boolean = true
 
-@Component({
-  selector: 'mse-home-name-animation-desktop',
-  templateUrl: './templates/home-name-animation-desktop.component.html',
-  styleUrls: ['./styles/home-name-animation-desktop.component.scss'],
-})
-export class HomeNameAnimationDesktopComponent implements OnInit, OnDestroy {
-  public scrollHomeNameHello: number = 20;
-  public scrollHomeNameName: number = 20;
-
-  constructor() {
+  Init(): void {
+    this.scrollHint = true
+    this.scrollHomeNameHello = true;
+    this.bouncingArrow()
+    setInterval((): void => {
+      this.bouncingArrow()
+    }, 1000)
   }
 
-
-  ngOnInit(): void {
-    window.addEventListener('scroll', this.scrollEvent);
+  bouncingArrow(): void {
+    this.bouncingArrowState = !this.bouncingArrowState
+    this.animationState = this.bouncingArrowState ? 'out' : 'in'
   }
 
-  ngOnDestroy(): void {
-  }
-
-  private scrollEvent(event: any): void {
+  scrollEvent(event: any): void {
     const screenHeight: number = window.screen.height;
     const halfScreenHeight: number = screenHeight / 2
     const quadScreenHeight: number = halfScreenHeight / 2

@@ -4,7 +4,7 @@ import {CommonUtil} from "@helpers";
 @Component({
   selector: 'mse-home-content-image-education-small',
   templateUrl: './templates/home-content-image-education-small.component.html',
-  styleUrls: ['./styles/home-content-image-education.component.scss', './styles/home-content-image-education-small.component.scss']
+  styleUrls: ['./styles/home-content-image-education.component.scss',]
 })
 export class HomeContentImageEducationSmallComponent implements OnInit, OnDestroy {
   constructor() {

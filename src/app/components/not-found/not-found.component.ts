@@ -4,7 +4,8 @@ import {LayoutService} from "@services";
 @Component({
   selector: 'mse-not-found',
   template: `
-      <ng-template [ngIf]="layoutService.getScreenSize === 'Small'" [ngIfElse]="largeLayout">
+      <ng-template [ngIf]="layoutService.getScreenSize === 'Small'"
+                   [ngIfElse]="largeLayout">
           <mse-not-found-small></mse-not-found-small>
       </ng-template>
       <ng-template #largeLayout>

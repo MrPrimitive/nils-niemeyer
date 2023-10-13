@@ -7,6 +7,6 @@ import {LayoutService} from "@services";
   styleUrls: ['./styles/product-content.component.scss']
 })
 export class ProductContentComponent {
-  constructor(layoutService: LayoutService) {
+  constructor(public layoutService: LayoutService) {
   }
 }

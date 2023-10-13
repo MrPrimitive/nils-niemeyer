@@ -1,6 +1,22 @@
 <div class="mse-project-content">
-  <div>
-    mse-project-content
-  </div>
-</div>
 
+  <ng-template [ngIf]="layoutService.getScreenSize === 'Small'" [ngIfElse]="largeLayout">
+
+    <div>
+
+      <mse-project-outrun-undeath-small></mse-project-outrun-undeath-small>
+
+    </div>
+
+  </ng-template>
+  <ng-template #largeLayout>
+
+    <div>
+
+      <mse-project-outrun-undeath-large></mse-project-outrun-undeath-large>
+
+    </div>
+
+  </ng-template>
+
+</div>

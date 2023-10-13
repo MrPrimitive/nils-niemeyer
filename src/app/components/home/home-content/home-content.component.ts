@@ -1,4 +1,5 @@
 import {Component, OnDestroy, OnInit} from "@angular/core";
+import {LayoutService} from "@services";
 
 @Component({
   selector: 'mse-home-content',
@@ -6,7 +7,7 @@ import {Component, OnDestroy, OnInit} from "@angular/core";
   styleUrls: ['./styles/home-content.component.scss']
 })
 export class HomeContentComponent implements OnInit, OnDestroy {
-  constructor() {
+  constructor(public layoutService: LayoutService) {
   }
 
   ngOnInit(): void {

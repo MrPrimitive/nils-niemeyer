@@ -1,28 +1,22 @@
 import {AppComponent} from '../app.component'
 import {
   AboutContentComponent,
-  AboutContentMeComponent,
   AboutContentMeLargeComponent,
   AboutContentMeSmallComponent,
   FooterComponent,
   FooterLargeComponent,
   FooterSmallComponent,
   HomeContentComponent,
-  HomeContentEducationComponent,
   HomeContentEducationLargeComponent,
   HomeContentEducationSmallComponent,
-  HomeContentExperienceComponent,
   HomeContentExperienceLargeComponent,
   HomeContentExperienceSmallComponent,
-  HomeContentImageEducationComponent,
   HomeContentImageEducationLargeComponent,
   HomeContentImageEducationSmallComponent,
-  HomeContentImageMeComponent,
   HomeContentImageMeLargeComponent,
   HomeContentImageMeSmallComponent,
-  HomeNameAnimationComponent,
-  HomeNameAnimationDesktopComponent,
-  HomeNameAnimationMobileComponent,
+  HomeNameAnimationLargeComponent,
+  HomeNameAnimationSmallComponent,
   NavBarComponent,
   NavBarLargeComponent,
   NavBarSmallComponent,
@@ -33,6 +27,9 @@ import {
   PrivacyPolicyLargeComponent,
   PrivacyPolicySmallComponent,
   ProductContentComponent,
+  ProjectContentComponent,
+  ProjectOutrunUndeathLargeComponent,
+  ProjectOutrunUndeathSmallComponent,
 } from '../components'
 import {
   AboutPageComponent,
@@ -42,7 +39,6 @@ import {
   ProductPageComponent,
   ProjectPageComponent
 } from '../pages'
-import {ProjectContentComponent} from "../components/project";
 
 export const DECLARATION_MODULES_COMPONENTS = [
   NavBarComponent,
@@ -55,30 +51,26 @@ export const DECLARATION_MODULES_COMPONENTS = [
   NotFoundLargeComponent,
   NotFoundSmallComponent,
   HomeContentComponent,
-  HomeNameAnimationComponent,
-  HomeNameAnimationDesktopComponent,
-  HomeNameAnimationMobileComponent,
-  HomeContentImageMeComponent,
+  HomeNameAnimationLargeComponent,
+  HomeNameAnimationSmallComponent,
   HomeContentImageMeLargeComponent,
   HomeContentImageMeSmallComponent,
-  HomeContentImageEducationComponent,
   HomeContentImageEducationLargeComponent,
   HomeContentImageEducationSmallComponent,
-  HomeContentExperienceComponent,
   HomeContentExperienceLargeComponent,
   HomeContentExperienceSmallComponent,
-  HomeContentEducationComponent,
   HomeContentEducationLargeComponent,
   HomeContentEducationSmallComponent,
   PrivacyPolicyComponent,
   PrivacyPolicyLargeComponent,
   PrivacyPolicySmallComponent,
   AboutContentComponent,
-  AboutContentMeComponent,
   AboutContentMeLargeComponent,
   AboutContentMeSmallComponent,
   ProductContentComponent,
   ProjectContentComponent,
+  ProjectOutrunUndeathLargeComponent,
+  ProjectOutrunUndeathSmallComponent,
 ]
 
 export const DECLARATION_MODULES_PAGES = [
