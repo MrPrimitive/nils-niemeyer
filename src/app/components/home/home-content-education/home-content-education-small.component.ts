@@ -7,7 +7,7 @@ import {Router} from '@angular/router'
 	styleUrls: ['./styles/home-content-education-small.component.scss']
 })
 export class HomeContentEducationSmallComponent implements OnInit, OnDestroy {
-	constructor(router: Router) {
+	constructor() {
 	}
 
 	ngOnDestroy(): void {

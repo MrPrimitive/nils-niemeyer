@@ -1,1 +1,1 @@
-export * from './about-content.component'
+export * from './about-content/about-content.component'

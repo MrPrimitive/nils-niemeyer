@@ -8,7 +8,7 @@ import {Router} from '@angular/router'
 })
 export class HomeContentEducationLargeComponent implements OnInit, OnDestroy {
 
-	constructor(router: Router) {
+	constructor() {
 	}
 
 	ngOnInit(): void {

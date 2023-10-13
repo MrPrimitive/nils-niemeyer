@@ -12,9 +12,7 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "mse-utils": [
-        "dist/mse-utils"
-      ]
+      "@helpers" : ["./src/app/_helper/index.ts"]
     },
     "declaration": false,
     "downlevelIteration": true,
