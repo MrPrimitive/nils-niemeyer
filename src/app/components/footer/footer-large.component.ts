@@ -1,5 +1,4 @@
 import {Component} from '@angular/core'
-import {LayoutService} from '../../_services/layout.service'
 import {FooterHelper} from './footer.helper'
 import {Router} from '@angular/router'
 

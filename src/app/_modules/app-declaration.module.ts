@@ -1,6 +1,9 @@
 import {AppComponent} from '../app.component'
 import {
   AboutContentComponent,
+  AboutContentMeComponent,
+  AboutContentMeLargeComponent,
+  AboutContentMeSmallComponent,
   FooterComponent,
   FooterLargeComponent,
   FooterSmallComponent,
@@ -68,7 +71,10 @@ export const DECLARATION_MODULES_COMPONENTS = [
   PrivacyPolicyComponent,
   PrivacyPolicyLargeComponent,
   PrivacyPolicySmallComponent,
-  AboutContentComponent
+  AboutContentComponent,
+  AboutContentMeComponent,
+  AboutContentMeLargeComponent,
+  AboutContentMeSmallComponent,
 ]
 
 export const DECLARATION_MODULES_PAGES = [

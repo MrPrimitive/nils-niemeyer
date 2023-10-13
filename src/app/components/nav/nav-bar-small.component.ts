@@ -1,13 +1,13 @@
 import {Component, ElementRef, OnDestroy, OnInit, Renderer2, ViewChild} from '@angular/core';
 import {Router} from "@angular/router";
-import {ANIMATION_NAV_EXPAND_MENU, ANIMATION_NAV_TURN_ARROW} from '../../animations';
+import {NavigationAnimation} from '@animations';
 import {NavBarHelper} from "./nav-bar.helper";
 
 @Component({
   selector: 'mse-nav-small',
   templateUrl: './templates/nav-bar-small.component.html',
   styleUrls: ['./styles/nav-bar-small.component.scss', './styles/nav-bar.component.scss'],
-  animations: [ANIMATION_NAV_TURN_ARROW, ANIMATION_NAV_EXPAND_MENU],
+  animations: [NavigationAnimation.ANIMATION_NAV_TURN_ARROW, NavigationAnimation.ANIMATION_NAV_EXPAND_MENU],
   providers: [NavBarHelper]
 })
 export class NavBarSmallComponent extends NavBarHelper implements OnInit, OnDestroy {

@@ -1,17 +1,12 @@
 import {Component, OnDestroy, OnInit} from '@angular/core'
-import {LayoutService} from '../../../_services/layout.service'
-import {
-  ANIMATION_HOME_BOUNCING_ARROW,
-  ANIMATION_HOME_FADE_TEXT,
-  ANIMATION_HOME_NAME_HELLO_SCROLL,
-  ANIMATION_HOME_SCROLL
-} from '../../../animations'
+import {LayoutService} from '@services'
+import {HomeAnimation} from '@animations'
 
 @Component({
   selector: 'mse-home-name-animation',
   templateUrl: './templates/home-name-animation.component.html',
   styleUrls: ['./styles/home-name-animation.component.scss'],
-  animations: [ANIMATION_HOME_BOUNCING_ARROW, ANIMATION_HOME_FADE_TEXT, ANIMATION_HOME_SCROLL]
+  animations: [HomeAnimation.ANIMATION_HOME_BOUNCING_ARROW, HomeAnimation.ANIMATION_HOME_FADE_TEXT, HomeAnimation.ANIMATION_HOME_SCROLL]
 })
 export class HomeNameAnimationComponent implements OnInit, OnDestroy {
   public bouncingArrowState: boolean = true

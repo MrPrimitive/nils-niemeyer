@@ -11,7 +11,6 @@ export class HomeContentImageEducationLargeComponent implements OnInit, OnDestro
   constructor() {
   }
 
-
   ngOnInit(): void {
     window.addEventListener('scroll', this.scrollEvent)
   }

@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {LayoutService} from "../../_services/layout.service";
+import {LayoutService} from "@services";
 
 @Component({
   selector: 'mse-privacy-policy',
