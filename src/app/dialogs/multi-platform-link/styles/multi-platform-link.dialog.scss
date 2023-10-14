@@ -1,0 +1,35 @@
+.mse-dialog {
+  background-color: ghostwhite;
+  width: calc(80vw);
+}
+
+.mse-dialog-title {
+  display: flex;
+  place-content: center;
+}
+
+.mse-social-media-logo {
+  width: 4em;
+}
+
+.mse-dialog-content {
+  text-align: center;
+  padding: 4em
+}
+
+.mse-social-media-link {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+.mse-social-media-link-link {
+  color: #0e161a;
+
+  &:hover {
+    color: #b72727;
+  }
+}
+
+.mse-social-media-link:last-child {
+  margin-bottom: 0;
+}

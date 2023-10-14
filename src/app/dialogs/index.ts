@@ -1,0 +1,1 @@
+export * from './multi-platform-link/multi-platform-link.dialog'
