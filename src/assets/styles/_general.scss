@@ -3,6 +3,9 @@
 html {
   position: relative;
   min-height: 100%;
+  font-family: $agave-nerd-font;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
 }
 
 footer {
@@ -19,7 +22,4 @@ body::-webkit-scrollbar {
 
 body {
   margin: 0;
-  font-family: $agave-nerd-font;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }
