@@ -23,21 +23,8 @@
   }
 }
 
-// new version
-
 .mse-home-experience-content {
   width: 100%;
-
-  .mse-home-experience-center-line {
-    position: absolute;
-    background: rgba(14, 22, 26, 0.50);
-    border-radius: 5px;
-    width: 8px;
-    height: 10%;
-    margin-left: 50%;
-    left: -4px;
-  }
-
 }
 
 .mse-home-experience-year-content {
@@ -71,25 +58,12 @@
   padding-top: 4em;
 }
 
-.mse-home-experience-card-content {
-  padding-top: 1em;
-  font-size: 1.2em;
-}
-
 .mse-home-experience-card-left {
   text-align: right;
   margin-right: calc(50% + 20px);
   padding-right: 20px;
   color: #0e161a;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%);
-
-  .mse-home-experience-card-header-left {
-
-  }
-
-  .mse-home-experience-card-content-left {
-
-  }
 }
 
 .mse-home-experience-card-right {
@@ -97,13 +71,6 @@
   margin-left: calc(50% + 20px);
   padding-left: 20px;
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%);
-
-  .mse-home-experience-card-header-right {
-  }
-
-  .mse-home-experience-card-content-right {
-
-  }
 }
 
 .mse-home-experience-card-year {
@@ -138,4 +105,9 @@
 .mse-home-experience-card-sub-sub-title {
   font-size: 1.5em;
   font-style: italic;
+}
+
+.mse-home-experience-card-content {
+  padding-top: 1em;
+  font-size: 1.2em;
 }
