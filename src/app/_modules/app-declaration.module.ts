@@ -5,9 +5,6 @@ import {
 	AboutContentHistorySmallComponent,
 	AboutContentMeLargeComponent,
 	AboutContentMeSmallComponent,
-	FooterComponent,
-	FooterLargeComponent,
-	FooterSmallComponent,
 	HomeContentComponent,
 	HomeContentEducationLargeComponent,
 	HomeContentEducationSmallComponent,
@@ -16,19 +13,24 @@ import {
 	HomeContentImageMeComponent,
 	HomeNameAnimationLargeComponent,
 	HomeNameAnimationSmallComponent,
-	NavBarLargeComponent,
-	NavBarSmallComponent,
-	NotFoundComponent,
-	PrivacyPolicyComponent,
-	PrivacyPolicyLargeComponent,
-	PrivacyPolicySmallComponent,
 	ProductContentComponent,
 	ProjectContentComponent,
 	ProjectEnigmaAdventureLargeComponent,
 	ProjectEnigmaAdventureSmallComponent,
 	ProjectOutrunUndeathLargeComponent,
 	ProjectOutrunUndeathSmallComponent
-} from '../components'
+} from '@components'
+import {
+	FooterComponent,
+	FooterLargeComponent,
+	FooterSmallComponent,
+	NavBarLargeComponent,
+	NavBarSmallComponent,
+	NotFoundComponent,
+	PrivacyPolicyComponent,
+	PrivacyPolicyLargeComponent,
+	PrivacyPolicySmallComponent
+} from '@shared'
 import {
 	AboutPageComponent,
 	HomePageComponent,

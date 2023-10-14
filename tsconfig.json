@@ -16,7 +16,9 @@
       "@services": ["./src/app/_services/index.ts"],
       "@animations": ["./src/app/_animations/index.ts"],
       "@dialogs": ["./src/app/dialogs/index.ts"],
-      "@models": ["./src/app/_models/index.ts"]
+      "@models": ["./src/app/_models/index.ts"],
+      "@shared": ["./src/app/shared/index.ts"],
+      "@components": ["./src/app/components/index.ts"]
     },
     "declaration": false,
     "downlevelIteration": true,
