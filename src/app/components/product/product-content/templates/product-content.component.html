@@ -1,14 +1,15 @@
-<ng-template [ngIf]="layoutService.getScreenSize === 'Small'" [ngIfElse]="largeLayout">
+<ng-template [ngIf]="layoutService.getScreenSize === screenSizeSmall"
+						 [ngIfElse]="largeLayout">
 
-  <div class="mse-product-content">
-    mse-product-content-small
-  </div>
+	<div class="mse-product-content">
+		mse-product-content-small
+	</div>
 
 </ng-template>
 <ng-template #largeLayout>
 
-  <div class="mse-product-content-large">
-    mse-product-content-large
-  </div>
+	<div class="mse-product-content-large">
+		mse-product-content-large
+	</div>
 
 </ng-template>

@@ -7,7 +7,7 @@ import {
   PrivacyPolicyPageComponent,
   ProductPageComponent,
   ProjectPageComponent
-} from '../pages'
+} from '@pages'
 
 const routes: Routes = [
   {

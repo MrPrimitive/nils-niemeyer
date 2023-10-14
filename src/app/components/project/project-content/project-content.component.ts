@@ -1,13 +1,21 @@
-import {Component} from "@angular/core";
-import {LayoutService} from "@services";
+import {Component, OnDestroy, OnInit} from '@angular/core'
+import {LayoutService} from '@services';
+import {ScreenSize} from '@constants'
 
 @Component({
   selector: 'mse-project-content',
   templateUrl: './templates/project-content.component.html',
   styleUrls: ['./styles/project-content.component.scss']
 })
-export class ProjectContentComponent {
+export class ProjectContentComponent implements OnInit, OnDestroy {
+  screenSizeSmall: ScreenSize = ScreenSize.Small
 
   constructor(public layoutService: LayoutService) {
+  }
+
+  ngOnInit(): void {
+  }
+
+  ngOnDestroy(): void {
   }
 }

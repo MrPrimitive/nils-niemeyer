@@ -1,23 +1,24 @@
-<ng-template [ngIf]="layoutService.getScreenSize === 'Small'" [ngIfElse]="largeLayout">
+<ng-template [ngIf]="layoutService.getScreenSize === screenSizeSmall"
+						 [ngIfElse]="largeLayout">
 
-  <div class="mse-project-content">
+	<div class="mse-project-content">
 
-    <mse-project-outrun-undeath-small></mse-project-outrun-undeath-small>
+		<mse-project-outrun-undeath-small></mse-project-outrun-undeath-small>
 
-    <mse-project-enigma-adventure-small></mse-project-enigma-adventure-small>
+		<mse-project-enigma-adventure-small></mse-project-enigma-adventure-small>
 
-  </div>
+	</div>
 
 </ng-template>
 <ng-template #largeLayout>
 
-  <div class="mse-project-content-large">
+	<div class="mse-project-content-large">
 
-    <mse-project-outrun-undeath-large></mse-project-outrun-undeath-large>
+		<mse-project-outrun-undeath-large></mse-project-outrun-undeath-large>
 
-    <mse-project-enigma-adventure-large></mse-project-enigma-adventure-large>
+		<mse-project-enigma-adventure-large></mse-project-enigma-adventure-large>
 
-  </div>
+	</div>
 
 </ng-template>
 

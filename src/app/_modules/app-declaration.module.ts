@@ -29,7 +29,8 @@ import {
 	NotFoundComponent,
 	PrivacyPolicyComponent,
 	PrivacyPolicyLargeComponent,
-	PrivacyPolicySmallComponent
+	PrivacyPolicySmallComponent,
+	PageContentNavComponent
 } from '@shared'
 import {
 	AboutPageComponent,
@@ -38,7 +39,7 @@ import {
 	PrivacyPolicyPageComponent,
 	ProductPageComponent,
 	ProjectPageComponent
-} from '../pages'
+} from '@pages'
 
 export const DECLARATION_MODULES_COMPONENTS = [
 	AboutContentComponent,
@@ -68,7 +69,8 @@ export const DECLARATION_MODULES_COMPONENTS = [
 	ProjectEnigmaAdventureLargeComponent,
 	ProjectEnigmaAdventureSmallComponent,
 	ProjectOutrunUndeathLargeComponent,
-	ProjectOutrunUndeathSmallComponent
+	ProjectOutrunUndeathSmallComponent,
+	PageContentNavComponent
 ]
 
 export const DECLARATION_MODULES_PAGES = [

@@ -1,0 +1,11 @@
+<div class="mse-content-nav">
+	<div class="mse-content-nav-content">
+
+		<ng-template ngFor let-item [ngForOf]="pageContentNavData">
+			<div class="mse-content-nav-link-content">
+				<a class="mse-content-nav-link"
+					 href="{{item.hrefLink}}">{{item.displayName}}</a>
+			</div>
+		</ng-template>
+	</div>
+</div>

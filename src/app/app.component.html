@@ -1,5 +1,5 @@
-<header>
-  <ng-template [ngIf]="layoutService.getScreenSize === 'Small'"
+<header class="mse-app-header">
+  <ng-template [ngIf]="layoutService.getScreenSize === screenSizeSmall"
                [ngIfElse]="smallLayout">
     <mse-nav-small></mse-nav-small>
   </ng-template>

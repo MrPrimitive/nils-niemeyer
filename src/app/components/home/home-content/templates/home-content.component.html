@@ -1,44 +1,49 @@
-<ng-template [ngIf]="layoutService.getScreenSize === 'Small'"
-             [ngIfElse]="smallLayout">
+<ng-template [ngIf]="layoutService.getScreenSize === screenSizeSmall"
+						 [ngIfElse]="smallLayout">
 
-  <div class="mse-home-name-animation">
-    <mse-home-name-animation-small></mse-home-name-animation-small>
-  </div>
+	<div class="mse-home-name-animation">
+		<mse-home-name-animation-small></mse-home-name-animation-small>
+	</div>
 
-  <div>
-    <div class="mse-home-background-image-me">
-      <mse-home-content-image-me></mse-home-content-image-me>
-    </div>
+	<div>
+		<div class="mse-home-background-image-me">
+			<mse-home-content-image-me></mse-home-content-image-me>
+		</div>
 
-    <div class="mse-home-content">
-      <mse-home-content-experience-small></mse-home-content-experience-small>
-    </div>
+		<div class="mse-home-content">
+			<mse-home-content-experience-small></mse-home-content-experience-small>
+		</div>
 
-    <div class="mse-home-content">
-      <mse-home-content-education-small></mse-home-content-education-small>
-    </div>
-  </div>
+		<div class="mse-home-content">
+			<mse-home-content-education-small></mse-home-content-education-small>
+		</div>
+	</div>
 
 </ng-template>
 
 <ng-template #smallLayout>
 
-  <div class="mse-home-name-animation">
-    <mse-home-name-animation-large></mse-home-name-animation-large>
-  </div>
+	<mse-page-content-selector [pageContentNavData]="pageContentNavData"></mse-page-content-selector>
 
-  <div>
-    <div class="mse-home-background-image-me">
-      <mse-home-content-image-me></mse-home-content-image-me>
-    </div>
+	<span class="mse-snap-anchor" id="top"></span>
+	<div class="mse-home-name-animation">
+		<mse-home-name-animation-large></mse-home-name-animation-large>
+	</div>
 
-    <div class="mse-home-content">
-      <mse-home-content-experience-large></mse-home-content-experience-large>
-    </div>
+	<div>
+		<div class="mse-home-background-image-me">
+			<mse-home-content-image-me></mse-home-content-image-me>
+		</div>
 
-    <div class="mse-home-content">
-      <mse-home-content-education-large></mse-home-content-education-large>
-    </div>
-  </div>
+		<span class="mse-snap-anchor" id="experience"></span>
+		<div class="mse-home-content">
+			<mse-home-content-experience-large></mse-home-content-experience-large>
+		</div>
+
+		<span class="mse-snap-anchor" id="education"></span>
+		<div class="mse-home-content">
+			<mse-home-content-education-large></mse-home-content-education-large>
+		</div>
+	</div>
 
 </ng-template>

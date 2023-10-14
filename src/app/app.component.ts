@@ -1,23 +1,24 @@
 import {Component} from '@angular/core'
-import {Router} from '@angular/router'
-import {LayoutService} from "@services";
+import {NavigationEnd, Router, RouterEvent} from '@angular/router'
+import {LayoutService} from '@services'
+import {ScreenSize} from '@constants'
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+	selector: 'app-root',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+	screenSizeSmall: ScreenSize = ScreenSize.Small
 
+	constructor(private router: Router,
+							public layoutService: LayoutService) {
+		this.router.events.subscribe((event: any) => this.scrollToTop(event))
+	}
 
-  constructor(private router: Router,
-              public layoutService: LayoutService) {
-    // @ts-ignore
-    this.router.events.subscribe((event: Event_2) => this.scrollToTop(event))
-  }
-
-  // @ts-ignore
-  private scrollToTop(event: Event_2): void {
-    window.scroll(0, 0)
-  }
+	private scrollToTop(event: RouterEvent): void {
+		if (event instanceof NavigationEnd) {
+			// window.scroll(0, 0)
+		}
+	}
 }
