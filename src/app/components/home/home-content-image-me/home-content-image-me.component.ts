@@ -2,11 +2,11 @@ import {Component, OnDestroy, OnInit} from '@angular/core'
 import {CommonUtil} from "@helpers";
 
 @Component({
-  selector: 'mse-home-content-image-me-small',
-  templateUrl: './templates/home-content-image-me-small.component.html',
+  selector: 'mse-home-content-image-me',
+  templateUrl: './templates/home-content-image-me.component.html',
   styleUrls: ['./styles/home-content-image-me.component.scss']
 })
-export class HomeContentImageMeSmallComponent implements OnInit, OnDestroy {
+export class HomeContentImageMeComponent implements OnInit, OnDestroy {
   constructor() {
   }
 
@@ -27,3 +27,4 @@ export class HomeContentImageMeSmallComponent implements OnInit, OnDestroy {
   }
 
 }
+
