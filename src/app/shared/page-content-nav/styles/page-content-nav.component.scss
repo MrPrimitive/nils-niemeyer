@@ -22,7 +22,8 @@
                   rgba(255, 255, 255, 0.9) 15%,
                   rgba(255, 255, 255, 0.9) 85%,
                   rgba(255, 255, 255, 0) 95%);
-  width: max-content;
+  width: 400px;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto;
 
@@ -36,6 +37,8 @@
 
 .mse-content-nav-link-content {
   padding: 0 1em;
+  text-wrap: nowrap;
+  //width: max-content;
 }
 
 .mse-content-nav-link {

@@ -1,29 +1,33 @@
-<div class="mse-home-animation">
+<div id="mse-home-content-animation" *ngIf="!dialogOpen">
 
-  <div class="mse-home-name" id="mse-home-name-animation">
-    <div class="mse-home-name-title-text" id="mse-home-name-title-text-animation">
-      Hello, I am
-    </div>
-    <div class="mse-home-name-my-name" id="mse-home-name-my-name-animation">
-      Nils Niemeyer
-    </div>
-  </div>
+	<div class="mse-home-animation">
 
-</div>
+		<div class="mse-home-name" id="mse-home-name-animation">
+			<div class="mse-home-name-title-text" id="mse-home-name-title-text-animation">
+				Hello, I am
+			</div>
+			<div class="mse-home-name-my-name" id="mse-home-name-my-name-animation">
+				Nils Niemeyer
+			</div>
+		</div>
 
-<div class="mse-home-scroll-arrow" [@scroll]="scrollHint">
+	</div>
 
-  <ng-template [ngIf]="scrollHint">
-    <div>
-      <div [@fadeTextInOut]="{value:animationState, params:{time: animationTime}}">
-        SCROLL
-      </div>
-      <div>
-        <mat-icon [@boundingArrowInOut]="{value:animationState, params:{time: animationTime}}">
-          expand_less
-        </mat-icon>
-      </div>
-    </div>
-  </ng-template>
+	<div class="mse-home-scroll-arrow" [@scroll]="scrollHint">
+
+		<ng-template [ngIf]="scrollHint">
+			<div>
+				<div [@fadeTextInOut]="{value:animationState, params:{time: animationTime}}">
+					SCROLL
+				</div>
+				<div>
+					<mat-icon [@boundingArrowInOut]="{value:animationState, params:{time: animationTime}}">
+						expand_less
+					</mat-icon>
+				</div>
+			</div>
+		</ng-template>
+
+	</div>
 
 </div>
