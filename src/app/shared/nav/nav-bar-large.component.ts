@@ -21,4 +21,3 @@ export class NavBarLargeComponent extends NavBarHelper implements OnInit {
 		this.router.events.subscribe((event: any) => this.navigationEvent(event))
 	}
 }
-

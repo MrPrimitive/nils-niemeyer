@@ -13,10 +13,6 @@ export class PageContentNavSectionDataType {
 		{
 			hrefLink: 'project#outrun-undeath',
 			displayName: 'OUTRUN UNDEATH'
-		},
-		{
-			hrefLink: 'project#makoto-studio-engine',
-			displayName: 'MAKOTO STUDIO ENGINE'
 		}
 	]
 	public static pageContentNavDataHome: IPageContentNavData[] = [
@@ -43,10 +39,6 @@ export class PageContentNavSectionDataType {
 		{
 			hrefLink: 'product#top',
 			displayName: 'TOP'
-		},
-		{
-			hrefLink: 'product#makoto-studio-engine',
-			displayName: 'MAKOTO STUDIO ENGINE'
 		}
 	]
 }

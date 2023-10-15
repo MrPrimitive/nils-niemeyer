@@ -5,8 +5,27 @@
   background-image: linear-gradient(rgba(189, 189, 189, 1) 50%, rgba(255, 255, 255, 0));
 
   .mse-nav-bar-left {
+    display: flex;
+
     .mse-nav-bar-logo {
       height: 4em;
+    }
+
+    .mse-nav-bar-left-name {
+      font-size: 1.2em;
+      display: grid;
+      place-content: center;
+      padding-left: 1em;
+
+      :first-child {
+        border-bottom: #0e161a 1px solid;
+        margin-bottom: 0.2em;
+      }
+
+      :last-child {
+        border-top: #0e161a 1px solid;
+        margin-top:  0.2em;
+      }
     }
   }
 
