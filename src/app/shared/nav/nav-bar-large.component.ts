@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core'
+import {Component, OnInit} from '@angular/core'
 import {NavBarHelper} from './nav-bar.helper'
 import {Router} from '@angular/router'
 import {NavigationUrl} from '@constants'

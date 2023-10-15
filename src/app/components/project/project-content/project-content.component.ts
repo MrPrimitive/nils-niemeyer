@@ -1,7 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core'
 import {LayoutService} from '@services';
 import {ScreenSize} from '@constants'
-import {IPageContentNavData} from '@models'
 
 @Component({
   selector: 'mse-project-content',
