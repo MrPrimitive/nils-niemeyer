@@ -1,12 +1,12 @@
 .mse-nav-bar {
   padding: 1em;
+  height: 4em;
   display: flex;
   background-image: linear-gradient(rgba(189, 189, 189, 1) 50%, rgba(255, 255, 255, 0));
 
   .mse-nav-bar-left {
     .mse-nav-bar-logo {
       height: 4em;
-
     }
   }
 
@@ -29,4 +29,42 @@
   }
 }
 
+// mse-nav-page-section-content-container
+.mse-nav-page-section-content-container {
+  float: right;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.8);
+
+  .mse-nav-page-section-content {
+    display: inline-flex;
+    padding: 0 2em 0 0;
+  }
+
+  .mse-nav-page-section-line {
+    width: 2em;
+    height: inherit;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 5%, rgb(0, 0, 0) 15%, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 95%);
+    background-size: 2px 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .mse-nav-page-section-link {
+    padding: 0.5em 0;
+  }
+
+  .mse-nav-page-section-nav-link {
+    color: rgba(14, 22, 26, 0.81);
+    text-decoration: none;
+
+    &:hover {
+      color: #0e161a;
+      text-decoration: underline;
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+}
 

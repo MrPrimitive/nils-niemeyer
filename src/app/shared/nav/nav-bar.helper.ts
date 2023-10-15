@@ -1,5 +1,7 @@
 import {Injectable} from "@angular/core";
-import {Router} from "@angular/router";
+import {NavigationStart, Router, RouterEvent} from '@angular/router'
+import {IPageContentNavData} from '@models'
+import {NavigationUrl, PageContentNavSectionDataType} from '@constants'
 
 @Injectable({
   providedIn: "platform"
@@ -7,8 +9,10 @@ import {Router} from "@angular/router";
 export class NavBarHelper {
   navMenuState: boolean = false
   navBarMainClass: string = 'mse-nav-bar'
+  pageContentNavData: IPageContentNavData[]
 
-  constructor(private router: Router) {
+  constructor(protected router: Router) {
+    this.pageContentNavData = PageContentNavSectionDataType.pageContentNavDataHome
   }
 
   openNavMenu(): void {
@@ -23,4 +27,22 @@ export class NavBarHelper {
       .then((state: boolean) => this.navMenuState = !state)
   }
 
+  protected navigationEvent(event: RouterEvent): void {
+    if (event instanceof NavigationStart) {
+      switch (event.url) {
+        case NavigationUrl.HOME :
+          this.pageContentNavData = PageContentNavSectionDataType.pageContentNavDataHome
+          break
+        case NavigationUrl.PROJECT :
+          this.pageContentNavData = PageContentNavSectionDataType.pageContentNavDataProject
+          break
+        case NavigationUrl.PRODUCT :
+          this.pageContentNavData = PageContentNavSectionDataType.pageContentNavDataProduct
+          break
+        case NavigationUrl.ABOUT :
+          this.pageContentNavData = PageContentNavSectionDataType.pageContentNavDataAbout
+          break
+      }
+    }
+  }
 }

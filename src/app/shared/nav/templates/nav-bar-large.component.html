@@ -1,37 +1,47 @@
 <div class="nav-bar-component">
-  <div class="mse-nav-bar">
+	<div class="mse-nav-bar">
 
-    <div class="mse-nav-bar-left">
-      <div class="mse-nav-company-logo" routerLink="/">
-        <img class="mse-nav-bar-logo"
-             alt="Makoto Studio Logo"
-             src="../../../../assets/images/svgs/Logo_Black_White.svg">
-      </div>
-    </div>
+		<div class="mse-nav-bar-left">
+			<div class="mse-nav-company-logo" routerLink="/">
+				<img class="mse-nav-bar-logo"
+						 alt="Makoto Studio Logo"
+						 src="../../../../assets/images/svgs/Logo_Black_White.svg">
+			</div>
+		</div>
 
-    <div class="mse-nav-bar-right">
+		<div class="mse-nav-bar-right">
+			<div class="mse-nav-link"
+					 (click)="navigateTo(NavigationUrl.HOME)">
+				HOME
+			</div>
+			<div class="mse-nav-link"
+					 (click)="navigateTo(NavigationUrl.PROJECT)">
+				PROJECTS
+			</div>
+			<div class="mse-nav-link"
+					 (click)="navigateTo(NavigationUrl.PRODUCT)">
+				PRODUCTS
+			</div>
+			<div class="mse-nav-link"
+					 (click)="navigateTo(NavigationUrl.ABOUT)">
+				ABOUT
+			</div>
+		</div>
+	</div>
 
-      <div class="mse-nav-link"
-           (click)="navigateTo('/')">
-        HOME
-      </div>
+	<div class="mse-nav-page-section-content-container">
+		<div class="mse-nav-page-section-content">
+			<div class="mse-nav-page-section-line"></div>
 
-      <div class="mse-nav-link"
-           (click)="navigateTo('/project')">
-        PROJECTS
-      </div>
-
-      <div class="mse-nav-link"
-           (click)="navigateTo('/product')">
-        PRODUCTS
-      </div>
-
-      <div class="mse-nav-link"
-           (click)="navigateTo('/about')">
-        ABOUT
-      </div>
-
-    </div>
-
-  </div>
+			<div>
+				<ng-template ngFor let-item [ngForOf]="pageContentNavData">
+					<div class="mse-nav-page-section-link">
+						<a class="mse-nav-page-section-nav-link"
+							 id="mse-chapter-{{item.displayName.toLowerCase()}}"
+							 href="{{item.hrefLink}}">{{item.displayName}}</a>
+					</div>
+				</ng-template>
+			</div>
+		</div>
+	</div>
 </div>

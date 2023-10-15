@@ -10,20 +10,6 @@ import {IPageContentNavData} from '@models'
 })
 export class HomeContentComponent implements OnInit, OnDestroy {
   screenSizeSmall: ScreenSize = ScreenSize.Small;
-  pageContentNavData: IPageContentNavData[] = [
-    {
-      hrefLink: '#top',
-      displayName: 'TOP',
-    },
-    {
-      hrefLink: '#experience',
-      displayName: 'EXPERIENCE',
-    },
-    {
-      hrefLink: '#education',
-      displayName: 'EDUCATION',
-    }
-  ];
 
   constructor(public layoutService: LayoutService) {
   }

@@ -30,7 +30,6 @@ import {
 	PrivacyPolicyComponent,
 	PrivacyPolicyLargeComponent,
 	PrivacyPolicySmallComponent,
-	PageContentNavComponent
 } from '@shared'
 import {
 	AboutPageComponent,
@@ -70,7 +69,6 @@ export const DECLARATION_MODULES_COMPONENTS = [
 	ProjectEnigmaAdventureSmallComponent,
 	ProjectOutrunUndeathLargeComponent,
 	ProjectOutrunUndeathSmallComponent,
-	PageContentNavComponent
 ]
 
 export const DECLARATION_MODULES_PAGES = [

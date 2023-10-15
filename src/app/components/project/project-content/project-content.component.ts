@@ -10,24 +10,6 @@ import {IPageContentNavData} from '@models'
 })
 export class ProjectContentComponent implements OnInit, OnDestroy {
   screenSizeSmall: ScreenSize = ScreenSize.Small
-  pageContentNavData: IPageContentNavData[] = [
-    {
-      hrefLink: 'project#top',
-      displayName: 'TOP',
-    },
-    {
-      hrefLink: 'project#enigma-adventure',
-      displayName: 'ENIGMA ADVENTURE',
-    },
-    {
-      hrefLink: 'project#outrun-undeath',
-      displayName: 'OUTRUN UNDEATH',
-    },
-    {
-      hrefLink: 'project#makoto-studio-engine',
-      displayName: 'MAKOTO STUDIO ENGINE',
-    }
-  ];
 
   constructor(public layoutService: LayoutService) {
   }
