@@ -1,6 +1,7 @@
 .mse-dialog {
   background-color: ghostwhite;
-  width: calc(80vw);
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 .mse-dialog-title {
@@ -14,7 +15,7 @@
 
 .mse-dialog-content {
   text-align: center;
-  padding: 4em
+  padding-top: 4em;
 }
 
 .mse-social-media-link {

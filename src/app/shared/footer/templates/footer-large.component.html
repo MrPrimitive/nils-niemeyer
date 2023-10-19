@@ -1,68 +1,75 @@
 <div class="mse-footer">
-    <div class="mse-footer-large-content">
+  <div class="mse-footer-large-content">
 
-        <div class="mse-footer-large-content-left">
-            <div class="mse-clickable"
-                 (click)="viewPage('/')">
-                Nils Niemeyer
-            </div>
-            <div class="mse-clickable"
-                 (click)="openLink('https://www.makotostudio.ch')">
-                Makoto Studio Entertainment
-            </div>
-            <div class="mse-clickable"
-                 (click)="viewPage('privacy-policy')">
-                Privacy
-            </div>
-        </div>
-
-
-        <div class="mse-footer-large-content-right">
-            <div class="mse-footer-large-content-social-media">
-                <div class="mse-social-media-logo-container">
-                    <img class="mse-social-media-logo mse-clickable"
-                         matTooltip="GitHub"
-                         (click)="openMultiLink(gitHubLinkData)"
-                         alt="GitHub Logo"
-                         src="../../../../assets/icons/github_logo.svg">
-                </div>
-                <div class="mse-social-media-logo-container">
-                    <img class="mse-social-media-logo mse-clickable"
-                         matTooltip="Twitter"
-                         (click)="openMultiLink(twitterLinkData)"
-                         alt="twitter Logo"
-                         src="../../../../assets/icons/twitter_logo.svg">
-                </div>
-                <div class="mse-social-media-logo-container">
-                    <img class="mse-social-media-logo mse-clickable"
-                         matTooltip="Instagram"
-                         (click)="openMultiLink(instagramLinkData)"
-                         alt="instagram Logo"
-                         src="../../../../assets/icons/instagram_logo.svg">
-                </div>
-                <div class="mse-social-media-logo-container">
-                    <img class="mse-social-media-logo mse-clickable"
-                         matTooltip="LinkedIn"
-                         (click)="openMultiLink(linkedInLinkData)"
-                         alt="linkedin Logo"
-                         src="../../../../assets/icons/linkedin_logo.svg">
-                </div>
-                <div class="mse-social-media-logo-container">
-                    <img class="mse-social-media-logo mse-clickable"
-                         matTooltip="Reddit"
-                         (click)="openMultiLink(redditLinkData)"
-                         alt="reddit Logo"
-                         src="../../../../assets/icons/reddit_logo.svg">
-                </div>
-                <div class="mse-social-media-logo-container">
-                    <img class="mse-social-media-logo mse-clickable"
-                         matTooltip="YouTube"
-                         (click)="openMultiLink(youtubeLinkData)"
-                         alt="youtuble Logo"
-                         src="../../../../assets/icons/youtuble_logo.svg">
-                </div>
-            </div>
-        </div>
-
+    <div class="mse-footer-large-content-left">
+      <div class="mse-clickable"
+           (click)="viewPage('/')">
+        Nils Niemeyer
+      </div>
+      <div class="mse-clickable"
+           (click)="openLink('https://www.makotostudio.ch')">
+        Makoto Studio Entertainment
+      </div>
+      <div class="mse-clickable"
+           (click)="viewPage('privacy-policy')">
+        Privacy
+      </div>
     </div>
+
+
+    <div class="mse-footer-large-content-right">
+      <div class="mse-footer-large-content-social-media">
+        <div class="mse-social-media-logo-container">
+          <img class="mse-social-media-logo mse-clickable"
+               matTooltip="Mail Me"
+               (click)="openMultiLink(emailLinkData, screenSizeLarge)"
+               alt="Mail Me"
+               src="../../../../assets/icons/email_icon.svg">
+        </div>
+        <div class="mse-social-media-logo-container">
+          <img class="mse-social-media-logo mse-clickable"
+               matTooltip="GitHub"
+               (click)="openMultiLink(gitHubLinkData, screenSizeLarge)"
+               alt="GitHub Logo"
+               src="../../../../assets/icons/github_logo.svg">
+        </div>
+        <div class="mse-social-media-logo-container">
+          <img class="mse-social-media-logo mse-clickable"
+               matTooltip="Twitter"
+               (click)="openMultiLink(twitterLinkData, screenSizeLarge)"
+               alt="twitter Logo"
+               src="../../../../assets/icons/twitter_logo.svg">
+        </div>
+        <div class="mse-social-media-logo-container">
+          <img class="mse-social-media-logo mse-clickable"
+               matTooltip="Instagram"
+               (click)="openMultiLink(instagramLinkData, screenSizeLarge)"
+               alt="instagram Logo"
+               src="../../../../assets/icons/instagram_logo.svg">
+        </div>
+        <div class="mse-social-media-logo-container">
+          <img class="mse-social-media-logo mse-clickable"
+               matTooltip="LinkedIn"
+               (click)="openMultiLink(linkedInLinkData, screenSizeLarge)"
+               alt="linkedin Logo"
+               src="../../../../assets/icons/linkedin_logo.svg">
+        </div>
+        <div class="mse-social-media-logo-container">
+          <img class="mse-social-media-logo mse-clickable"
+               matTooltip="Reddit"
+               (click)="openMultiLink(redditLinkData, screenSizeLarge)"
+               alt="reddit Logo"
+               src="../../../../assets/icons/reddit_logo.svg">
+        </div>
+        <div class="mse-social-media-logo-container">
+          <img class="mse-social-media-logo mse-clickable"
+               matTooltip="YouTube"
+               (click)="openMultiLink(youtubeLinkData, screenSizeLarge)"
+               alt="youtuble Logo"
+               src="../../../../assets/icons/youtuble_logo.svg">
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>

@@ -1,19 +1,17 @@
 <div mat-dialog-content class="mse-dialog">
 
-	<div class="mse-dialog-title">
-		<div>
-			<img class="mse-social-media-logo"
-					 alt="{{data.platform}} Logo"
-					 src="{{data.platformLogo}}">
-		</div>
-	</div>
+  <div class="mse-dialog-title">
+    <img class="mse-social-media-logo"
+         alt="{{data.platform}} Logo"
+         src="{{data.platformLogo}}">
+  </div>
 
 
-	<div class="mse-dialog-content">
-		<ng-template ngFor let-item [ngForOf]="data.links">
-			<div class="mse-social-media-link">
-				<a class="mse-social-media-link-link" target="_blank" href="{{item.link}}">{{item.name}}</a>
-			</div>
-		</ng-template>
-	</div>
+  <div class="mse-dialog-content">
+    <ng-template ngFor let-item [ngForOf]="data.links">
+      <div class="mse-social-media-link">
+        <a class="mse-social-media-link-link" target="_blank" href="{{item.link}}">{{item.name}}</a>
+      </div>
+    </ng-template>
+  </div>
 </div>
